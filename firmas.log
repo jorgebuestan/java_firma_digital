@@ -1,0 +1,1886 @@
+2021-11-19 15:43:04 DEBUG Main:39 - Prueba de Configuración de Firma ElectronicaLLLL
+ 2021-11-19 15:43:05 TRACE I18nFactory:131 - No hay fichero de configuración específico
+ 2021-11-19 15:43:05 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+ 2021-11-19 15:43:05 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+ 2021-11-19 15:43:05 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+ 2021-11-19 15:43:05 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+ 2021-11-19 15:43:05 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.c14n.implementations.Canonicalizer11_OmitComments)
+ 2021-11-19 15:43:05 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer11_WithComments)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.transforms.implementations.TransformC14N11)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.transforms.implementations.TransformC14N11_WithComments)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+ 2021-11-19 15:43:05 DEBUG Init:221 - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:374 - Init() called
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+ 2021-11-19 15:43:05 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+ 2021-11-19 15:43:05 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+ 2021-11-19 15:43:05 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverBigLocalFilesystem: A simple resolver for requests to the local file system with big files
+ 2021-11-19 15:43:05 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+ 2021-11-19 15:43:05 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+ 2021-11-19 15:43:05 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+ 2021-11-19 15:43:05 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+ 2021-11-19 15:43:05 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+ 2021-11-19 15:43:05 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+ 2021-11-19 15:43:05 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+ 2021-11-19 15:43:05 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+ 2021-11-19 15:43:05 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+ 2021-11-19 15:43:05 DEBUG Init:364 - Now I try to bind prefixes:
+ 2021-11-19 15:43:05 DEBUG Init:374 - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+ 2021-11-19 15:43:05 DEBUG Init:374 - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+ 2021-11-19 15:43:05 DEBUG Init:374 - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+ 2021-11-19 15:43:05 DEBUG Init:374 - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+ 2021-11-19 15:43:05 DEBUG Init:374 - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+ 2021-11-19 15:43:05 DEBUG Init:374 - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+ 2021-11-19 15:43:05 DEBUG Init:374 - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+ 2021-11-19 15:43:05 DEBUG Init:386 - XX_init                             347 ms
+ 2021-11-19 15:43:05 DEBUG Init:387 -   XX_prng                           0 ms
+ 2021-11-19 15:43:05 DEBUG Init:388 -   XX_parsing                        21 ms
+ 2021-11-19 15:43:05 DEBUG Init:389 -   XX_configure_i18n                 40 ms
+ 2021-11-19 15:43:05 DEBUG Init:390 -   XX_configure_reg_c14n             108 ms
+ 2021-11-19 15:43:05 DEBUG Init:391 -   XX_configure_reg_jcemapper        9 ms
+ 2021-11-19 15:43:05 DEBUG Init:392 -   XX_configure_reg_keyInfo          5 ms
+ 2021-11-19 15:43:05 DEBUG Init:393 -   XX_configure_reg_keyResolver      20 ms
+ 2021-11-19 15:43:05 DEBUG Init:394 -   XX_configure_reg_prefixes         3 ms
+ 2021-11-19 15:43:05 DEBUG Init:395 -   XX_configure_reg_resourceresolver 38 ms
+ 2021-11-19 15:43:05 DEBUG Init:396 -   XX_configure_reg_sigalgos         37 ms
+ 2021-11-19 15:43:05 DEBUG Init:397 -   XX_configure_reg_transforms       64 ms
+ 2021-11-19 15:43:05 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+ 2021-11-19 15:43:05 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+ 2021-11-19 15:43:05 DEBUG Transform:102 - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+ 2021-11-19 15:43:05 DEBUG Transform:104 - The NodeList is null
+ 2021-11-19 15:43:05 DEBUG Transforms:221 - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:132 - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+ 2021-11-19 15:43:05 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:43:05 DEBUG SignatureBaseRSA:67 - Created SignatureRSA using SHA1withRSA
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP
+ 2021-11-19 15:43:05 DEBUG ResolverDirectHTTP:260 - quick fail for empty URIs and local ones
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverBigLocalFilesystem
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature660113-SignedProperties158453"
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature660113-SignedProperties158453"
+ 2021-11-19 15:43:05 DEBUG IdResolver:151 - getElementByIdType() Search for ID Signature660113-SignedProperties158453
+ 2021-11-19 15:43:05 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Signature660113-SignedProperties158453
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:95 - Try to catch an Element with ID Signature660113-SignedProperties158453 and Element was [etsi:SignedProperties: null]
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:64 - <etsi:SignedProperties xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature660113-SignedProperties158453"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-11-19T15:43:04-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>cxpBzGaFyB+8Np+ZuSHUNAAyVOk=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2 SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A. 2,C=EC</ds:X509IssuerName><ds:X509SerialNumber>62477101</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-178696"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties>
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1155879"
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1155879"
+ 2021-11-19 15:43:05 DEBUG IdResolver:151 - getElementByIdType() Search for ID Certificate1155879
+ 2021-11-19 15:43:05 DEBUG IdResolver:99 - I could find an Element using the simple getElementByIdType method: ds:KeyInfo
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:95 - Try to catch an Element with ID Certificate1155879 and Element was [ds:KeyInfo: null]
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:64 - <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Certificate1155879">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIL5TCCCc2gAwIBAgIEA7lTLTANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
+BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
+T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
+QkNBLTIgU0VDVVJJVFkgREFUQTAeFw0yMTA2MjkxNDMxMzFaFw0yMjA2MjkxNDMxMzFaMIGdMSYw
+JAYDVQQDDB1SSUNBUkRPIERBTklFTCBCVVJCQU5PIEZFUlJJTjEVMBMGA1UEBRMMMjkwNjIxMDk0
+MTI1MTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xHTAb
+BgNVBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMQswCQYDVQQGEwJFQzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBANCzm23nmmfT1P57Xmy+xBBdyhET5K6j/8xeLasxrzD0nbpvLDIPz8cP
+7wl7r+9bH0Ec8FyAbaWZrkoT5sTsB02WTU2xtdXmr66cQL6kJbMmgdvsj1xCLgswIGijl9XFFjYk
+mmWcZK67smNehaWIghLDN5U7sl1Da5+7pcjEWjqklpzcNlkARO/0lhrfmuCGqvpAvs97diELSJg5
+fV6bNzDa1PJQ72aAhO4xZSW17xa066U7+V2mheLcqEO8H1bqRvWjRH27F7lQiwxZgmSnYL5FZkgl
+TJOraGjvNMmJZyx7x/yZvEg5FLrH9jiluBabANDjbOHmgW4rEE9q/7lFpkECAwEAAaOCBy0wggcp
+MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUjLrKEVd4JYAdawpLVb+NrmLdvY8wWQYIKwYBBQUH
+AQEETTBLMEkGCCsGAQUFBzABhj1odHRwOi8vb2NzcGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpi
+Y2EvcHVibGljd2ViL3N0YXR1cy9vY3NwMIHPBgNVHS4EgccwgcQwgcGggb6ggbuGgbhsZGFwOi8v
+bGRhcHNkY2EyLnNlY3VyaXR5ZGF0YS5uZXQuZWMvQ049QVVUT1JJREFEIERFIENFUlRJRklDQUNJ
+T04gU1VCQ0EtMiBTRUNVUklUWSBEQVRBLE9VPUVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJ
+TkZPUk1BQ0lPTixPPVNFQ1VSSVRZIERBVEEgUy5BLiAyLEM9RUM/ZGVsdGFSZXZvY2F0aW9uTGlz
+dD9iYXNlMCAGA1UdEQQZMBeBFXJkYnVyYmFub0Bob3RtYWlsLmNvbTCCAQYGA1UdIASB/jCB+zBa
+BgorBgEEAYKmcgIHMEwwSgYIKwYBBQUHAgIwPh48AEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAGQA
+ZQAgAFAAZQByAHMAbwBuAGEAIABOAGEAdAB1AHIAYQBsMIGcBgorBgEEAYKmcgIBMIGNMIGKBggr
+BgEFBQcCARZ+aHR0cHM6Ly93d3cuc2VjdXJpdHlkYXRhLm5ldC5lYy93cC1jb250ZW50L2Rvd25s
+b2Fkcy9Ob3JtYXRpdmFzL1BfZGVfQ2VydGlmaWNhZG9zL1BvbGl0aWNhcyBkZSBDZXJ0aWZpY2Fk
+byBQZXJzb25hIE5hdHVyYWwucGRmMIICogYDVR0fBIICmTCCApUwgeWgQaA/hj1odHRwOi8vb2Nz
+cGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpiY2EvcHVibGljd2ViL3N0YXR1cy9vY3NwooGfpIGc
+MIGZMTkwNwYDVQQDDDBBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VSSVRZ
+IERBVEExMDAuBgNVBAsMJ0VOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjEd
+MBsGA1UECgwUU0VDVVJJVFkgREFUQSBTLkEuIDIxCzAJBgNVBAYTAkVDMIHHoIHEoIHBhoG+bGRh
+cDovL2xkYXBzZGNhMi5zZWN1cml0eWRhdGEubmV0LmVjL0NOPUFVVE9SSURBRCBERSBDRVJUSUZJ
+Q0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFUQSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04g
+REUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBEQVRBIFMuQS4gMixDPUVDP2NlcnRpZmljYXRlUmV2
+b2NhdGlvbkxpc3Q/YmFzZTCB4KCB3aCB2oaB12h0dHBzOi8vcG9ydGFsLW9wZXJhZG9yMi5zZWN1
+cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi93ZWJkaXN0L2NlcnRkaXN0P2NtZD1jcmwm
+aXNzdWVyPUNOPUFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFU
+QSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBE
+QVRBIFMuQS4gMixDPUVDMB0GA1UdDgQWBBS9ZziqP0bEoOQHB3KWWmcyXrjDiDArBgNVHRAEJDAi
+gA8yMDIxMDYyOTE0MzEzMVqBDzIwMjIwNjI5MTQzMTMxWjALBgNVHQ8EBAMCBeAwGgYKKwYBBAGC
+pnIDAQQMDAoxMzA5NzQzNTk3MBcGCisGAQQBgqZyAwkECQwHUVVFVkVETzARBgorBgEEAYKmcgMi
+BAMMAS4wQgYKKwYBBAGCpnIDBwQ0DDJBVi4gSkFJTUUgUk9MRE9TIEFHVUlMRVJBIFNPTEFSIDEw
+IFkgREVDSU1BIE5PVkVOQTAeBgorBgEEAYKmcgMCBBAMDlJJQ0FSRE8gREFOSUVMMB8GCisGAQQB
+gqZyAyAEEQwPMDAxMDAyMDAwMTI4MTkzMBEGCisGAQQBgqZyAyMEAwwBLjATBgorBgEEAYKmcgMh
+BAUMA1BGWDAXBgorBgEEAYKmcgMMBAkMB0VDVUFET1IwFwYKKwYBBAGCpnIDAwQJDAdCVVJCQU5P
+MBEGCisGAQQBgqZyAx4EAwwBLjAdBgorBgEEAYKmcgMLBA8MDTEzMDk3NDM1OTcwMDEwEQYKKwYB
+BAGCpnIDHQQDDAEuMBYGCisGAQQBgqZyAwQECAwGRkVSUklOMBwGCisGAQQBgqZyAwgEDgwMNTkz
+OTg1ODA0NzYyMA0GCSqGSIb3DQEBCwUAA4ICAQCOXdGgB2uSv9PfCxVX2CU3tm2frKaeSU0p6YwV
+PXKAY54b+M0ds/te8EYdWp83X06E2I2MzI0IfLbuvNd/K4F6OlgRM3Rwp8Hr8izVFhsOjzqergY+
+7MbEYD00PA/a8uUvtF4nAUN2sRRx1qs1BNGVaqavgZ5gMIQAEen2h4JDzaR78fDZN3Z5uHS4+IQE
+Ejfp1zOmGsy/a9GylcJSbVgwljTw2AaD3cJ1wG2frLGI88EFhshxSAmnZPja2ORQ696srVLPBxqP
+2wB9eP8T5Im7no9pCX859arf/L+Hvwjlf9PlpuVeN7CToZ596Yfjhxxj2qoYbDSw0qIw3cXSWQHX
+qteg3daYIEu82B5YBNOFictAw7lDFRBsgBoaXdpos0yKJz4WVeyc31CRIfEz4V890+Ij4x+M9fei
+vpxi9QHgIzfrl7SGDhO/Ju+b8HRQMpW2iXqp8MM+zBLliieV/H6sksz4MaQZtnNtiD0VBJTfLvHd
+eDdYs2CyelHZZFCyxP9glLOsY4mSH9A8HtwpQmsethvjgwNOgjzKeyTsAIi7T/xo1TI/5XszNyYm
+PQg/nXWJ98r4Dol7TQOFoQQ6EbTBUsRpmDDtzXeJa18FIhBotmXyTc2kAAZAHowe93hq8t5gJX9D
+B/o0s8VY+Ja76xLZ0Np45KzqXYVIBaqARk8lRg==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+0LObbeeaZ9PU/ntebL7EEF3KERPkrqP/zF4tqzGvMPSdum8sMg/Pxw/vCXuv71sfQRzwXIBtpZmu
+ShPmxOwHTZZNTbG11eavrpxAvqQlsyaB2+yPXEIuCzAgaKOX1cUWNiSaZZxkrruyY16FpYiCEsM3
+lTuyXUNrn7ulyMRaOqSWnNw2WQBE7/SWGt+a4Iaq+kC+z3t2IQtImDl9Xps3MNrU8lDvZoCE7jFl
+JbXvFrTrpTv5XaaF4tyoQ7wfVupG9aNEfbsXuVCLDFmCZKdgvkVmSCVMk6toaO80yYlnLHvH/Jm8
+SDkUusf2OKW4FpsA0ONs4eaBbisQT2r/uUWmQQ==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:43:05 DEBUG IdResolver:151 - getElementByIdType() Search for ID comprobante
+ 2021-11-19 15:43:05 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID comprobante
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:95 - Try to catch an Element with ID comprobante and Element was [factura: null]
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Transform", "null")
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:64 - <factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>BURBANO FERRIN RICARDO DANIEL</razonSocial>
+        <nombreComercial>BURBANO FERRIN RICARDO DANIEL</nombreComercial>
+        <ruc>1309743597001</ruc>
+        <claveAcceso>1911202101130974359700110010010000000111234567819</claveAcceso>
+        <codDoc>01</codDoc>
+        <estab>001</estab>
+        <ptoEmi>001</ptoEmi>
+        <secuencial>000000011</secuencial>
+        <dirMatriz>ECU991</dirMatriz>
+        <regimenMicroempresas>CONTRIBUYENTE R??GIMEN MICROEMPRESAS</regimenMicroempresas>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision>19/11/2021</fechaEmision>
+        <dirEstablecimiento>ECU991</dirEstablecimiento>
+        <obligadoContabilidad>NO</obligadoContabilidad>
+        <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+        <razonSocialComprador>BUESTAN VILLARROEL JORGE OSWALDO</razonSocialComprador>
+        <identificacionComprador>0922489968</identificacionComprador>
+        <direccionComprador>florida norte</direccionComprador>
+        <totalSinImpuestos>20.00</totalSinImpuestos>
+        <totalDescuento>0.00</totalDescuento>
+        <totalConImpuestos>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <baseImponible>20.00</baseImponible>
+                <tarifa>0</tarifa>
+                <valor>0.00</valor>
+            </totalImpuesto>
+        </totalConImpuestos>
+        <propina>0.00</propina>
+        <importeTotal>20.00</importeTotal>
+        <moneda>DOLAR</moneda>
+        <pagos>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>20.00</total>
+            </pago>
+        </pagos>
+    </infoFactura>
+    <detalles>
+        <detalle>
+            <codigoPrincipal>001</codigoPrincipal>
+            <codigoAuxiliar>001</codigoAuxiliar>
+            <descripcion>PRUEBA</descripcion>
+            <cantidad>1</cantidad>
+            <precioUnitario>20</precioUnitario>
+            <descuento>0</descuento>
+            <precioTotalSinImpuesto>20.00</precioTotalSinImpuesto>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>0</tarifa>
+                    <baseImponible>20.00</baseImponible>
+                    <valor>0.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+    </detalles>
+    <infoAdicional>
+        <campoAdicional nombre="Direcci??n">florida norte</campoAdicional>
+        <campoAdicional nombre="Tel??fono">2259197</campoAdicional>
+        <campoAdicional nombre="Email">jorge.buestan.v@gmail.com</campoAdicional>
+    </infoAdicional>
+</factura>
+ 2021-11-19 15:43:05 DEBUG SignerOutputStream:68 - Canonicalized SignedInfo:
+ 2021-11-19 15:43:05 DEBUG SignerOutputStream:73 - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature-SignedInfo862054">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID259861" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature660113-SignedProperties158453">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>xjkMZic6Ia9en4t2Wol1aqCDFd8=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1155879">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>gn59OC7jCZ/C0Ec0ZQwar2ZIoMg=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-178696" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>AFj7RHLnCLeKUjMLO6gVlmeluH4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+ 2021-11-19 15:43:05 DEBUG FirmaXML:568 - Se realiza XADES-T  -> false
+ 2021-11-19 15:43:05 DEBUG FirmaXML:610 - Se realiza XADES-C ->false
+ 2021-11-19 15:43:05 DEBUG FirmaXML:650 - Se realiza XADES-X -> false
+ 2021-11-19 15:43:05 DEBUG FirmaXML:653 - Se realiza XADES-XL ->  false
+ 2021-11-19 15:43:05 DEBUG ValidarFirmaXML:523 - Número de firmas en el documento:  1
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Signature", "./")
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:SignedInfo", "./")
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:SignatureMethod", "./")
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:KeyInfo", "./")
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Transforms", "./")
+ 2021-11-19 15:43:05 DEBUG XMLSignature:601 - SignatureMethodURI = http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:43:05 DEBUG SignatureAlgorithm:132 - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+ 2021-11-19 15:43:05 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:43:05 DEBUG SignatureBaseRSA:67 - Created SignatureRSA using SHA1withRSA
+ 2021-11-19 15:43:05 DEBUG XMLSignature:602 - jceSigAlgorithm    = SHA1withRSA
+ 2021-11-19 15:43:05 DEBUG XMLSignature:603 - jceSigProvider     = SunRsaSign
+ 2021-11-19 15:43:05 DEBUG XMLSignature:604 - PublicKey = Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26346135017474827686096568012433707991471420430662588646241526876643594505861214787679042585007593275838672392426388892092049821221644715039251312292711439184954619234825388355115558231231085064566390560003863803733547702164858613543210456210132287077162928933152025643633961442907618903571019314012731568283562459458868476071819190512572040542765038840804005203684719087953955025823167390123372458215505341119339488262820522822028998332024521662240508464576097157417299518828785262548740501365673406262463390610767655005637500993359976560016929506480853727277355793953302231281381959777277424041610115056187839194689
+  public exponent: 65537
+ 2021-11-19 15:43:05 DEBUG SignerOutputStream:68 - Canonicalized SignedInfo:
+ 2021-11-19 15:43:05 DEBUG SignerOutputStream:73 - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature-SignedInfo862054">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID259861" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature660113-SignedProperties158453">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>xjkMZic6Ia9en4t2Wol1aqCDFd8=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1155879">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>gn59OC7jCZ/C0Ec0ZQwar2ZIoMg=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-178696" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>AFj7RHLnCLeKUjMLO6gVlmeluH4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+ 2021-11-19 15:43:05 DEBUG Manifest:281 - verify 3 References
+ 2021-11-19 15:43:05 DEBUG Manifest:282 - I am not requested to follow nested Manifests
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature660113-SignedProperties158453"
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature660113-SignedProperties158453"
+ 2021-11-19 15:43:05 DEBUG IdResolver:151 - getElementByIdType() Search for ID Signature660113-SignedProperties158453
+ 2021-11-19 15:43:05 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Signature660113-SignedProperties158453
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:95 - Try to catch an Element with ID Signature660113-SignedProperties158453 and Element was [etsi:SignedProperties: null]
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:64 - <etsi:SignedProperties xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature660113-SignedProperties158453"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-11-19T15:43:04-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>cxpBzGaFyB+8Np+ZuSHUNAAyVOk=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2 SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A. 2,C=EC</ds:X509IssuerName><ds:X509SerialNumber>62477101</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-178696"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties>
+ 2021-11-19 15:43:05 INFO  Reference:826 - Verification successful for URI "#Signature660113-SignedProperties158453"
+ 2021-11-19 15:43:05 DEBUG Manifest:312 - The Reference has Type http://uri.etsi.org/01903#SignedProperties
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1155879"
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1155879"
+ 2021-11-19 15:43:05 DEBUG IdResolver:151 - getElementByIdType() Search for ID Certificate1155879
+ 2021-11-19 15:43:05 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Certificate1155879
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:95 - Try to catch an Element with ID Certificate1155879 and Element was [ds:KeyInfo: null]
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:64 - <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Certificate1155879">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIL5TCCCc2gAwIBAgIEA7lTLTANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
+BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
+T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
+QkNBLTIgU0VDVVJJVFkgREFUQTAeFw0yMTA2MjkxNDMxMzFaFw0yMjA2MjkxNDMxMzFaMIGdMSYw
+JAYDVQQDDB1SSUNBUkRPIERBTklFTCBCVVJCQU5PIEZFUlJJTjEVMBMGA1UEBRMMMjkwNjIxMDk0
+MTI1MTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xHTAb
+BgNVBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMQswCQYDVQQGEwJFQzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBANCzm23nmmfT1P57Xmy+xBBdyhET5K6j/8xeLasxrzD0nbpvLDIPz8cP
+7wl7r+9bH0Ec8FyAbaWZrkoT5sTsB02WTU2xtdXmr66cQL6kJbMmgdvsj1xCLgswIGijl9XFFjYk
+mmWcZK67smNehaWIghLDN5U7sl1Da5+7pcjEWjqklpzcNlkARO/0lhrfmuCGqvpAvs97diELSJg5
+fV6bNzDa1PJQ72aAhO4xZSW17xa066U7+V2mheLcqEO8H1bqRvWjRH27F7lQiwxZgmSnYL5FZkgl
+TJOraGjvNMmJZyx7x/yZvEg5FLrH9jiluBabANDjbOHmgW4rEE9q/7lFpkECAwEAAaOCBy0wggcp
+MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUjLrKEVd4JYAdawpLVb+NrmLdvY8wWQYIKwYBBQUH
+AQEETTBLMEkGCCsGAQUFBzABhj1odHRwOi8vb2NzcGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpi
+Y2EvcHVibGljd2ViL3N0YXR1cy9vY3NwMIHPBgNVHS4EgccwgcQwgcGggb6ggbuGgbhsZGFwOi8v
+bGRhcHNkY2EyLnNlY3VyaXR5ZGF0YS5uZXQuZWMvQ049QVVUT1JJREFEIERFIENFUlRJRklDQUNJ
+T04gU1VCQ0EtMiBTRUNVUklUWSBEQVRBLE9VPUVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJ
+TkZPUk1BQ0lPTixPPVNFQ1VSSVRZIERBVEEgUy5BLiAyLEM9RUM/ZGVsdGFSZXZvY2F0aW9uTGlz
+dD9iYXNlMCAGA1UdEQQZMBeBFXJkYnVyYmFub0Bob3RtYWlsLmNvbTCCAQYGA1UdIASB/jCB+zBa
+BgorBgEEAYKmcgIHMEwwSgYIKwYBBQUHAgIwPh48AEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAGQA
+ZQAgAFAAZQByAHMAbwBuAGEAIABOAGEAdAB1AHIAYQBsMIGcBgorBgEEAYKmcgIBMIGNMIGKBggr
+BgEFBQcCARZ+aHR0cHM6Ly93d3cuc2VjdXJpdHlkYXRhLm5ldC5lYy93cC1jb250ZW50L2Rvd25s
+b2Fkcy9Ob3JtYXRpdmFzL1BfZGVfQ2VydGlmaWNhZG9zL1BvbGl0aWNhcyBkZSBDZXJ0aWZpY2Fk
+byBQZXJzb25hIE5hdHVyYWwucGRmMIICogYDVR0fBIICmTCCApUwgeWgQaA/hj1odHRwOi8vb2Nz
+cGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpiY2EvcHVibGljd2ViL3N0YXR1cy9vY3NwooGfpIGc
+MIGZMTkwNwYDVQQDDDBBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VSSVRZ
+IERBVEExMDAuBgNVBAsMJ0VOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjEd
+MBsGA1UECgwUU0VDVVJJVFkgREFUQSBTLkEuIDIxCzAJBgNVBAYTAkVDMIHHoIHEoIHBhoG+bGRh
+cDovL2xkYXBzZGNhMi5zZWN1cml0eWRhdGEubmV0LmVjL0NOPUFVVE9SSURBRCBERSBDRVJUSUZJ
+Q0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFUQSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04g
+REUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBEQVRBIFMuQS4gMixDPUVDP2NlcnRpZmljYXRlUmV2
+b2NhdGlvbkxpc3Q/YmFzZTCB4KCB3aCB2oaB12h0dHBzOi8vcG9ydGFsLW9wZXJhZG9yMi5zZWN1
+cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi93ZWJkaXN0L2NlcnRkaXN0P2NtZD1jcmwm
+aXNzdWVyPUNOPUFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFU
+QSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBE
+QVRBIFMuQS4gMixDPUVDMB0GA1UdDgQWBBS9ZziqP0bEoOQHB3KWWmcyXrjDiDArBgNVHRAEJDAi
+gA8yMDIxMDYyOTE0MzEzMVqBDzIwMjIwNjI5MTQzMTMxWjALBgNVHQ8EBAMCBeAwGgYKKwYBBAGC
+pnIDAQQMDAoxMzA5NzQzNTk3MBcGCisGAQQBgqZyAwkECQwHUVVFVkVETzARBgorBgEEAYKmcgMi
+BAMMAS4wQgYKKwYBBAGCpnIDBwQ0DDJBVi4gSkFJTUUgUk9MRE9TIEFHVUlMRVJBIFNPTEFSIDEw
+IFkgREVDSU1BIE5PVkVOQTAeBgorBgEEAYKmcgMCBBAMDlJJQ0FSRE8gREFOSUVMMB8GCisGAQQB
+gqZyAyAEEQwPMDAxMDAyMDAwMTI4MTkzMBEGCisGAQQBgqZyAyMEAwwBLjATBgorBgEEAYKmcgMh
+BAUMA1BGWDAXBgorBgEEAYKmcgMMBAkMB0VDVUFET1IwFwYKKwYBBAGCpnIDAwQJDAdCVVJCQU5P
+MBEGCisGAQQBgqZyAx4EAwwBLjAdBgorBgEEAYKmcgMLBA8MDTEzMDk3NDM1OTcwMDEwEQYKKwYB
+BAGCpnIDHQQDDAEuMBYGCisGAQQBgqZyAwQECAwGRkVSUklOMBwGCisGAQQBgqZyAwgEDgwMNTkz
+OTg1ODA0NzYyMA0GCSqGSIb3DQEBCwUAA4ICAQCOXdGgB2uSv9PfCxVX2CU3tm2frKaeSU0p6YwV
+PXKAY54b+M0ds/te8EYdWp83X06E2I2MzI0IfLbuvNd/K4F6OlgRM3Rwp8Hr8izVFhsOjzqergY+
+7MbEYD00PA/a8uUvtF4nAUN2sRRx1qs1BNGVaqavgZ5gMIQAEen2h4JDzaR78fDZN3Z5uHS4+IQE
+Ejfp1zOmGsy/a9GylcJSbVgwljTw2AaD3cJ1wG2frLGI88EFhshxSAmnZPja2ORQ696srVLPBxqP
+2wB9eP8T5Im7no9pCX859arf/L+Hvwjlf9PlpuVeN7CToZ596Yfjhxxj2qoYbDSw0qIw3cXSWQHX
+qteg3daYIEu82B5YBNOFictAw7lDFRBsgBoaXdpos0yKJz4WVeyc31CRIfEz4V890+Ij4x+M9fei
+vpxi9QHgIzfrl7SGDhO/Ju+b8HRQMpW2iXqp8MM+zBLliieV/H6sksz4MaQZtnNtiD0VBJTfLvHd
+eDdYs2CyelHZZFCyxP9glLOsY4mSH9A8HtwpQmsethvjgwNOgjzKeyTsAIi7T/xo1TI/5XszNyYm
+PQg/nXWJ98r4Dol7TQOFoQQ6EbTBUsRpmDDtzXeJa18FIhBotmXyTc2kAAZAHowe93hq8t5gJX9D
+B/o0s8VY+Ja76xLZ0Np45KzqXYVIBaqARk8lRg==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+0LObbeeaZ9PU/ntebL7EEF3KERPkrqP/zF4tqzGvMPSdum8sMg/Pxw/vCXuv71sfQRzwXIBtpZmu
+ShPmxOwHTZZNTbG11eavrpxAvqQlsyaB2+yPXEIuCzAgaKOX1cUWNiSaZZxkrruyY16FpYiCEsM3
+lTuyXUNrn7ulyMRaOqSWnNw2WQBE7/SWGt+a4Iaq+kC+z3t2IQtImDl9Xps3MNrU8lDvZoCE7jFl
+JbXvFrTrpTv5XaaF4tyoQ7wfVupG9aNEfbsXuVCLDFmCZKdgvkVmSCVMk6toaO80yYlnLHvH/Jm8
+SDkUusf2OKW4FpsA0ONs4eaBbisQT2r/uUWmQQ==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+ 2021-11-19 15:43:05 INFO  Reference:826 - Verification successful for URI "#Certificate1155879"
+ 2021-11-19 15:43:05 DEBUG Manifest:312 - The Reference has Type 
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Transforms", "./")
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:43:05 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:43:05 DEBUG IdResolver:151 - getElementByIdType() Search for ID comprobante
+ 2021-11-19 15:43:05 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID comprobante
+ 2021-11-19 15:43:05 DEBUG ResolverFragment:95 - Try to catch an Element with ID comprobante and Element was [factura: null]
+ 2021-11-19 15:43:05 DEBUG ElementProxy:194 - setElement("ds:Transform", "./")
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:43:05 DEBUG DigesterOutputStream:64 - <factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>BURBANO FERRIN RICARDO DANIEL</razonSocial>
+        <nombreComercial>BURBANO FERRIN RICARDO DANIEL</nombreComercial>
+        <ruc>1309743597001</ruc>
+        <claveAcceso>1911202101130974359700110010010000000111234567819</claveAcceso>
+        <codDoc>01</codDoc>
+        <estab>001</estab>
+        <ptoEmi>001</ptoEmi>
+        <secuencial>000000011</secuencial>
+        <dirMatriz>ECU991</dirMatriz>
+        <regimenMicroempresas>CONTRIBUYENTE R??GIMEN MICROEMPRESAS</regimenMicroempresas>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision>19/11/2021</fechaEmision>
+        <dirEstablecimiento>ECU991</dirEstablecimiento>
+        <obligadoContabilidad>NO</obligadoContabilidad>
+        <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+        <razonSocialComprador>BUESTAN VILLARROEL JORGE OSWALDO</razonSocialComprador>
+        <identificacionComprador>0922489968</identificacionComprador>
+        <direccionComprador>florida norte</direccionComprador>
+        <totalSinImpuestos>20.00</totalSinImpuestos>
+        <totalDescuento>0.00</totalDescuento>
+        <totalConImpuestos>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <baseImponible>20.00</baseImponible>
+                <tarifa>0</tarifa>
+                <valor>0.00</valor>
+            </totalImpuesto>
+        </totalConImpuestos>
+        <propina>0.00</propina>
+        <importeTotal>20.00</importeTotal>
+        <moneda>DOLAR</moneda>
+        <pagos>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>20.00</total>
+            </pago>
+        </pagos>
+    </infoFactura>
+    <detalles>
+        <detalle>
+            <codigoPrincipal>001</codigoPrincipal>
+            <codigoAuxiliar>001</codigoAuxiliar>
+            <descripcion>PRUEBA</descripcion>
+            <cantidad>1</cantidad>
+            <precioUnitario>20</precioUnitario>
+            <descuento>0</descuento>
+            <precioTotalSinImpuesto>20.00</precioTotalSinImpuesto>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>0</tarifa>
+                    <baseImponible>20.00</baseImponible>
+                    <valor>0.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+    </detalles>
+    <infoAdicional>
+        <campoAdicional nombre="Direcci??n">florida norte</campoAdicional>
+        <campoAdicional nombre="Tel??fono">2259197</campoAdicional>
+        <campoAdicional nombre="Email">jorge.buestan.v@gmail.com</campoAdicional>
+    </infoAdicional>
+</factura>
+ 2021-11-19 15:43:05 INFO  Reference:826 - Verification successful for URI "#comprobante"
+ 2021-11-19 15:43:05 DEBUG Manifest:312 - The Reference has Type 
+ 2021-11-19 15:43:05 DEBUG ValidarFirmaXML:4606 - XAdES_BES
+ 2021-11-19 15:43:05 INFO  ValidarFirmaXML:998 - El documento es una firma XAdES-BES válida
+ 2021-11-19 15:43:05 INFO  ValidacionBasica:63 - La firma es valida = El documento es una firma XAdES-BES válida
+Firmado el: Fri Nov 19 15:43:04 COT 2021
+ 2021-11-19 15:55:17 DEBUG Main:39 - Prueba de Configuración de Firma ElectronicaLLLL
+ 2021-11-19 15:55:17 DEBUG Main:39 - Prueba de Configuración de Firma ElectronicaLLLL
+ 2021-11-19 15:55:17 TRACE I18nFactory:131 - No hay fichero de configuración específico
+ 2021-11-19 15:55:17 TRACE I18nFactory:131 - No hay fichero de configuración específico
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.c14n.implementations.Canonicalizer11_OmitComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer11_WithComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.c14n.implementations.Canonicalizer11_OmitComments)
+ 2021-11-19 15:55:17 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer11_WithComments)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.transforms.implementations.TransformC14N11)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.transforms.implementations.TransformC14N11_WithComments)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.transforms.implementations.TransformC14N11)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.transforms.implementations.TransformC14N11_WithComments)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+ 2021-11-19 15:55:17 DEBUG Init:221 - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:374 - Init() called
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:374 - Init() called
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+ 2021-11-19 15:55:17 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+ 2021-11-19 15:55:17 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+ 2021-11-19 15:55:17 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverBigLocalFilesystem: A simple resolver for requests to the local file system with big files
+ 2021-11-19 15:55:17 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+ 2021-11-19 15:55:17 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+ 2021-11-19 15:55:17 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+ 2021-11-19 15:55:17 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverBigLocalFilesystem: A simple resolver for requests to the local file system with big files
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+ 2021-11-19 15:55:17 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+ 2021-11-19 15:55:17 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+ 2021-11-19 15:55:17 DEBUG Init:364 - Now I try to bind prefixes:
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+ 2021-11-19 15:55:17 DEBUG Init:386 - XX_init                             93 ms
+ 2021-11-19 15:55:17 DEBUG Init:387 -   XX_prng                           0 ms
+ 2021-11-19 15:55:17 DEBUG Init:388 -   XX_parsing                        20 ms
+ 2021-11-19 15:55:17 DEBUG Init:389 -   XX_configure_i18n                 10 ms
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+ 2021-11-19 15:55:17 DEBUG Init:390 -   XX_configure_reg_c14n             13 ms
+ 2021-11-19 15:55:17 DEBUG Init:391 -   XX_configure_reg_jcemapper        3 ms
+ 2021-11-19 15:55:17 DEBUG Init:392 -   XX_configure_reg_keyInfo          5 ms
+ 2021-11-19 15:55:17 DEBUG Init:393 -   XX_configure_reg_keyResolver      6 ms
+ 2021-11-19 15:55:17 DEBUG Init:394 -   XX_configure_reg_prefixes         1 ms
+ 2021-11-19 15:55:17 DEBUG Init:395 -   XX_configure_reg_resourceresolver 5 ms
+ 2021-11-19 15:55:17 DEBUG Init:396 -   XX_configure_reg_sigalgos         16 ms
+ 2021-11-19 15:55:17 DEBUG Init:397 -   XX_configure_reg_transforms       13 ms
+ 2021-11-19 15:55:17 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+ 2021-11-19 15:55:17 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+ 2021-11-19 15:55:17 DEBUG Init:364 - Now I try to bind prefixes:
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+ 2021-11-19 15:55:17 DEBUG Init:374 - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+ 2021-11-19 15:55:17 DEBUG Init:386 - XX_init                             105 ms
+ 2021-11-19 15:55:17 DEBUG Init:387 -   XX_prng                           0 ms
+ 2021-11-19 15:55:17 DEBUG Init:388 -   XX_parsing                        23 ms
+ 2021-11-19 15:55:17 DEBUG Init:389 -   XX_configure_i18n                 10 ms
+ 2021-11-19 15:55:17 DEBUG Init:390 -   XX_configure_reg_c14n             15 ms
+ 2021-11-19 15:55:17 DEBUG Init:391 -   XX_configure_reg_jcemapper        5 ms
+ 2021-11-19 15:55:17 DEBUG Init:392 -   XX_configure_reg_keyInfo          8 ms
+ 2021-11-19 15:55:17 DEBUG Init:393 -   XX_configure_reg_keyResolver      6 ms
+ 2021-11-19 15:55:17 DEBUG Init:394 -   XX_configure_reg_prefixes         1 ms
+ 2021-11-19 15:55:17 DEBUG Init:395 -   XX_configure_reg_resourceresolver 4 ms
+ 2021-11-19 15:55:17 DEBUG Init:396 -   XX_configure_reg_sigalgos         17 ms
+ 2021-11-19 15:55:17 DEBUG Init:397 -   XX_configure_reg_transforms       13 ms
+ 2021-11-19 15:55:17 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+ 2021-11-19 15:55:17 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+ 2021-11-19 15:55:17 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+ 2021-11-19 15:55:17 DEBUG Transform:102 - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+ 2021-11-19 15:55:17 DEBUG Transform:104 - The NodeList is null
+ 2021-11-19 15:55:17 DEBUG Transforms:221 - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+ 2021-11-19 15:55:17 DEBUG Transform:102 - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+ 2021-11-19 15:55:17 DEBUG Transform:104 - The NodeList is null
+ 2021-11-19 15:55:17 DEBUG Transforms:221 - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:132 - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+ 2021-11-19 15:55:17 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:55:17 DEBUG SignatureBaseRSA:67 - Created SignatureRSA using SHA1withRSA
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP
+ 2021-11-19 15:55:17 DEBUG ResolverDirectHTTP:260 - quick fail for empty URIs and local ones
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverBigLocalFilesystem
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature554930-SignedProperties584419"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature554930-SignedProperties584419"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID Signature554930-SignedProperties584419
+ 2021-11-19 15:55:17 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Signature554930-SignedProperties584419
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:132 - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+ 2021-11-19 15:55:17 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:55:17 DEBUG SignatureBaseRSA:67 - Created SignatureRSA using SHA1withRSA
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP
+ 2021-11-19 15:55:17 DEBUG ResolverDirectHTTP:260 - quick fail for empty URIs and local ones
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverBigLocalFilesystem
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature554554-SignedProperties246964"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature554554-SignedProperties246964"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID Signature554554-SignedProperties246964
+ 2021-11-19 15:55:17 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Signature554554-SignedProperties246964
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID Signature554930-SignedProperties584419 and Element was [etsi:SignedProperties: null]
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID Signature554554-SignedProperties246964 and Element was [etsi:SignedProperties: null]
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <etsi:SignedProperties xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature554930-SignedProperties584419"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-11-19T15:55:17-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>cxpBzGaFyB+8Np+ZuSHUNAAyVOk=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2 SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A. 2,C=EC</ds:X509IssuerName><ds:X509SerialNumber>62477101</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-871747"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties>
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1614111"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1614111"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID Certificate1614111
+ 2021-11-19 15:55:17 DEBUG IdResolver:99 - I could find an Element using the simple getElementByIdType method: ds:KeyInfo
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID Certificate1614111 and Element was [ds:KeyInfo: null]
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Certificate1614111">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIL5TCCCc2gAwIBAgIEA7lTLTANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
+BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
+T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
+QkNBLTIgU0VDVVJJVFkgREFUQTAeFw0yMTA2MjkxNDMxMzFaFw0yMjA2MjkxNDMxMzFaMIGdMSYw
+JAYDVQQDDB1SSUNBUkRPIERBTklFTCBCVVJCQU5PIEZFUlJJTjEVMBMGA1UEBRMMMjkwNjIxMDk0
+MTI1MTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xHTAb
+BgNVBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMQswCQYDVQQGEwJFQzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBANCzm23nmmfT1P57Xmy+xBBdyhET5K6j/8xeLasxrzD0nbpvLDIPz8cP
+7wl7r+9bH0Ec8FyAbaWZrkoT5sTsB02WTU2xtdXmr66cQL6kJbMmgdvsj1xCLgswIGijl9XFFjYk
+mmWcZK67smNehaWIghLDN5U7sl1Da5+7pcjEWjqklpzcNlkARO/0lhrfmuCGqvpAvs97diELSJg5
+fV6bNzDa1PJQ72aAhO4xZSW17xa066U7+V2mheLcqEO8H1bqRvWjRH27F7lQiwxZgmSnYL5FZkgl
+TJOraGjvNMmJZyx7x/yZvEg5FLrH9jiluBabANDjbOHmgW4rEE9q/7lFpkECAwEAAaOCBy0wggcp
+MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUjLrKEVd4JYAdawpLVb+NrmLdvY8wWQYIKwYBBQUH
+AQEETTBLMEkGCCsGAQUFBzABhj1odHRwOi8vb2NzcGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpi
+Y2EvcHVibGljd2ViL3N0YXR1cy9vY3NwMIHPBgNVHS4EgccwgcQwgcGggb6ggbuGgbhsZGFwOi8v
+bGRhcHNkY2EyLnNlY3VyaXR5ZGF0YS5uZXQuZWMvQ049QVVUT1JJREFEIERFIENFUlRJRklDQUNJ
+T04gU1VCQ0EtMiBTRUNVUklUWSBEQVRBLE9VPUVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJ
+TkZPUk1BQ0lPTixPPVNFQ1VSSVRZIERBVEEgUy5BLiAyLEM9RUM/ZGVsdGFSZXZvY2F0aW9uTGlz
+dD9iYXNlMCAGA1UdEQQZMBeBFXJkYnVyYmFub0Bob3RtYWlsLmNvbTCCAQYGA1UdIASB/jCB+zBa
+BgorBgEEAYKmcgIHMEwwSgYIKwYBBQUHAgIwPh48AEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAGQA
+ZQAgAFAAZQByAHMAbwBuAGEAIABOAGEAdAB1AHIAYQBsMIGcBgorBgEEAYKmcgIBMIGNMIGKBggr
+BgEFBQcCARZ+aHR0cHM6Ly93d3cuc2VjdXJpdHlkYXRhLm5ldC5lYy93cC1jb250ZW50L2Rvd25s
+b2Fkcy9Ob3JtYXRpdmFzL1BfZGVfQ2VydGlmaWNhZG9zL1BvbGl0aWNhcyBkZSBDZXJ0aWZpY2Fk
+byBQZXJzb25hIE5hdHVyYWwucGRmMIICogYDVR0fBIICmTCCApUwgeWgQaA/hj1odHRwOi8vb2Nz
+cGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpiY2EvcHVibGljd2ViL3N0YXR1cy9vY3NwooGfpIGc
+MIGZMTkwNwYDVQQDDDBBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VSSVRZ
+IERBVEExMDAuBgNVBAsMJ0VOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjEd
+MBsGA1UECgwUU0VDVVJJVFkgREFUQSBTLkEuIDIxCzAJBgNVBAYTAkVDMIHHoIHEoIHBhoG+bGRh
+cDovL2xkYXBzZGNhMi5zZWN1cml0eWRhdGEubmV0LmVjL0NOPUFVVE9SSURBRCBERSBDRVJUSUZJ
+Q0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFUQSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04g
+REUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBEQVRBIFMuQS4gMixDPUVDP2NlcnRpZmljYXRlUmV2
+b2NhdGlvbkxpc3Q/YmFzZTCB4KCB3aCB2oaB12h0dHBzOi8vcG9ydGFsLW9wZXJhZG9yMi5zZWN1
+cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi93ZWJkaXN0L2NlcnRkaXN0P2NtZD1jcmwm
+aXNzdWVyPUNOPUFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFU
+QSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBE
+QVRBIFMuQS4gMixDPUVDMB0GA1UdDgQWBBS9ZziqP0bEoOQHB3KWWmcyXrjDiDArBgNVHRAEJDAi
+gA8yMDIxMDYyOTE0MzEzMVqBDzIwMjIwNjI5MTQzMTMxWjALBgNVHQ8EBAMCBeAwGgYKKwYBBAGC
+pnIDAQQMDAoxMzA5NzQzNTk3MBcGCisGAQQBgqZyAwkECQwHUVVFVkVETzARBgorBgEEAYKmcgMi
+BAMMAS4wQgYKKwYBBAGCpnIDBwQ0DDJBVi4gSkFJTUUgUk9MRE9TIEFHVUlMRVJBIFNPTEFSIDEw
+IFkgREVDSU1BIE5PVkVOQTAeBgorBgEEAYKmcgMCBBAMDlJJQ0FSRE8gREFOSUVMMB8GCisGAQQB
+gqZyAyAEEQwPMDAxMDAyMDAwMTI4MTkzMBEGCisGAQQBgqZyAyMEAwwBLjATBgorBgEEAYKmcgMh
+BAUMA1BGWDAXBgorBgEEAYKmcgMMBAkMB0VDVUFET1IwFwYKKwYBBAGCpnIDAwQJDAdCVVJCQU5P
+MBEGCisGAQQBgqZyAx4EAwwBLjAdBgorBgEEAYKmcgMLBA8MDTEzMDk3NDM1OTcwMDEwEQYKKwYB
+BAGCpnIDHQQDDAEuMBYGCisGAQQBgqZyAwQECAwGRkVSUklOMBwGCisGAQQBgqZyAwgEDgwMNTkz
+OTg1ODA0NzYyMA0GCSqGSIb3DQEBCwUAA4ICAQCOXdGgB2uSv9PfCxVX2CU3tm2frKaeSU0p6YwV
+PXKAY54b+M0ds/te8EYdWp83X06E2I2MzI0IfLbuvNd/K4F6OlgRM3Rwp8Hr8izVFhsOjzqergY+
+7MbEYD00PA/a8uUvtF4nAUN2sRRx1qs1BNGVaqavgZ5gMIQAEen2h4JDzaR78fDZN3Z5uHS4+IQE
+Ejfp1zOmGsy/a9GylcJSbVgwljTw2AaD3cJ1wG2frLGI88EFhshxSAmnZPja2ORQ696srVLPBxqP
+2wB9eP8T5Im7no9pCX859arf/L+Hvwjlf9PlpuVeN7CToZ596Yfjhxxj2qoYbDSw0qIw3cXSWQHX
+qteg3daYIEu82B5YBNOFictAw7lDFRBsgBoaXdpos0yKJz4WVeyc31CRIfEz4V890+Ij4x+M9fei
+vpxi9QHgIzfrl7SGDhO/Ju+b8HRQMpW2iXqp8MM+zBLliieV/H6sksz4MaQZtnNtiD0VBJTfLvHd
+eDdYs2CyelHZZFCyxP9glLOsY4mSH9A8HtwpQmsethvjgwNOgjzKeyTsAIi7T/xo1TI/5XszNyYm
+PQg/nXWJ98r4Dol7TQOFoQQ6EbTBUsRpmDDtzXeJa18FIhBotmXyTc2kAAZAHowe93hq8t5gJX9D
+B/o0s8VY+Ja76xLZ0Np45KzqXYVIBaqARk8lRg==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+0LObbeeaZ9PU/ntebL7EEF3KERPkrqP/zF4tqzGvMPSdum8sMg/Pxw/vCXuv71sfQRzwXIBtpZmu
+ShPmxOwHTZZNTbG11eavrpxAvqQlsyaB2+yPXEIuCzAgaKOX1cUWNiSaZZxkrruyY16FpYiCEsM3
+lTuyXUNrn7ulyMRaOqSWnNw2WQBE7/SWGt+a4Iaq+kC+z3t2IQtImDl9Xps3MNrU8lDvZoCE7jFl
+JbXvFrTrpTv5XaaF4tyoQ7wfVupG9aNEfbsXuVCLDFmCZKdgvkVmSCVMk6toaO80yYlnLHvH/Jm8
+SDkUusf2OKW4FpsA0ONs4eaBbisQT2r/uUWmQQ==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID comprobante
+ 2021-11-19 15:55:17 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID comprobante
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID comprobante and Element was [factura: null]
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Transform", "null")
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <etsi:SignedProperties xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature554554-SignedProperties246964"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-11-19T15:55:17-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>cxpBzGaFyB+8Np+ZuSHUNAAyVOk=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2 SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A. 2,C=EC</ds:X509IssuerName><ds:X509SerialNumber>62477101</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-776053"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties>
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1908960"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>BURBANO FERRIN RICARDO DANIEL</razonSocial>
+        <nombreComercial>BURBANO FERRIN RICARDO DANIEL</nombreComercial>
+        <ruc>1309743597001</ruc>
+        <claveAcceso>1911202101130974359700110010010000000111234567819</claveAcceso>
+        <codDoc>01</codDoc>
+        <estab>001</estab>
+        <ptoEmi>001</ptoEmi>
+        <secuencial>000000011</secuencial>
+        <dirMatriz>ECU991</dirMatriz>
+        <regimenMicroempresas>CONTRIBUYENTE R??GIMEN MICROEMPRESAS</regimenMicroempresas>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision>19/11/2021</fechaEmision>
+        <dirEstablecimiento>ECU991</dirEstablecimiento>
+        <obligadoContabilidad>NO</obligadoContabilidad>
+        <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+        <razonSocialComprador>BUESTAN VILLARROEL JORGE OSWALDO</razonSocialComprador>
+        <identificacionComprador>0922489968</identificacionComprador>
+        <direccionComprador>florida norte</direccionComprador>
+        <totalSinImpuestos>20.00</totalSinImpuestos>
+        <totalDescuento>0.00</totalDescuento>
+        <totalConImpuestos>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <baseImponible>20.00</baseImponible>
+                <tarifa>0</tarifa>
+                <valor>0.00</valor>
+            </totalImpuesto>
+        </totalConImpuestos>
+        <propina>0.00</propina>
+        <importeTotal>20.00</importeTotal>
+        <moneda>DOLAR</moneda>
+        <pagos>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>20.00</total>
+            </pago>
+        </pagos>
+    </infoFactura>
+    <detalles>
+        <detalle>
+            <codigoPrincipal>001</codigoPrincipal>
+            <codigoAuxiliar>001</codigoAuxiliar>
+            <descripcion>PRUEBA</descripcion>
+            <cantidad>1</cantidad>
+            <precioUnitario>20</precioUnitario>
+            <descuento>0</descuento>
+            <precioTotalSinImpuesto>20.00</precioTotalSinImpuesto>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>0</tarifa>
+                    <baseImponible>20.00</baseImponible>
+                    <valor>0.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+    </detalles>
+    <infoAdicional>
+        <campoAdicional nombre="Direcci??n">florida norte</campoAdicional>
+        <campoAdicional nombre="Tel??fono">2259197</campoAdicional>
+        <campoAdicional nombre="Email">jorge.buestan.v@gmail.com</campoAdicional>
+    </infoAdicional>
+</factura>
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1908960"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID Certificate1908960
+ 2021-11-19 15:55:17 DEBUG IdResolver:99 - I could find an Element using the simple getElementByIdType method: ds:KeyInfo
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID Certificate1908960 and Element was [ds:KeyInfo: null]
+ 2021-11-19 15:55:17 DEBUG SignerOutputStream:68 - Canonicalized SignedInfo:
+ 2021-11-19 15:55:17 DEBUG SignerOutputStream:73 - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature-SignedInfo852719">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID480233" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature554930-SignedProperties584419">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>+FzJ/UEnRt5IWWFZta1be6nNu1E=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1614111">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>hn63k70UGI3Co/Xozuaao5sy4jU=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-871747" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>AFj7RHLnCLeKUjMLO6gVlmeluH4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Certificate1908960">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIL5TCCCc2gAwIBAgIEA7lTLTANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
+BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
+T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
+QkNBLTIgU0VDVVJJVFkgREFUQTAeFw0yMTA2MjkxNDMxMzFaFw0yMjA2MjkxNDMxMzFaMIGdMSYw
+JAYDVQQDDB1SSUNBUkRPIERBTklFTCBCVVJCQU5PIEZFUlJJTjEVMBMGA1UEBRMMMjkwNjIxMDk0
+MTI1MTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xHTAb
+BgNVBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMQswCQYDVQQGEwJFQzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBANCzm23nmmfT1P57Xmy+xBBdyhET5K6j/8xeLasxrzD0nbpvLDIPz8cP
+7wl7r+9bH0Ec8FyAbaWZrkoT5sTsB02WTU2xtdXmr66cQL6kJbMmgdvsj1xCLgswIGijl9XFFjYk
+mmWcZK67smNehaWIghLDN5U7sl1Da5+7pcjEWjqklpzcNlkARO/0lhrfmuCGqvpAvs97diELSJg5
+fV6bNzDa1PJQ72aAhO4xZSW17xa066U7+V2mheLcqEO8H1bqRvWjRH27F7lQiwxZgmSnYL5FZkgl
+TJOraGjvNMmJZyx7x/yZvEg5FLrH9jiluBabANDjbOHmgW4rEE9q/7lFpkECAwEAAaOCBy0wggcp
+MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUjLrKEVd4JYAdawpLVb+NrmLdvY8wWQYIKwYBBQUH
+AQEETTBLMEkGCCsGAQUFBzABhj1odHRwOi8vb2NzcGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpi
+Y2EvcHVibGljd2ViL3N0YXR1cy9vY3NwMIHPBgNVHS4EgccwgcQwgcGggb6ggbuGgbhsZGFwOi8v
+bGRhcHNkY2EyLnNlY3VyaXR5ZGF0YS5uZXQuZWMvQ049QVVUT1JJREFEIERFIENFUlRJRklDQUNJ
+T04gU1VCQ0EtMiBTRUNVUklUWSBEQVRBLE9VPUVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJ
+TkZPUk1BQ0lPTixPPVNFQ1VSSVRZIERBVEEgUy5BLiAyLEM9RUM/ZGVsdGFSZXZvY2F0aW9uTGlz
+dD9iYXNlMCAGA1UdEQQZMBeBFXJkYnVyYmFub0Bob3RtYWlsLmNvbTCCAQYGA1UdIASB/jCB+zBa
+BgorBgEEAYKmcgIHMEwwSgYIKwYBBQUHAgIwPh48AEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAGQA
+ZQAgAFAAZQByAHMAbwBuAGEAIABOAGEAdAB1AHIAYQBsMIGcBgorBgEEAYKmcgIBMIGNMIGKBggr
+BgEFBQcCARZ+aHR0cHM6Ly93d3cuc2VjdXJpdHlkYXRhLm5ldC5lYy93cC1jb250ZW50L2Rvd25s
+b2Fkcy9Ob3JtYXRpdmFzL1BfZGVfQ2VydGlmaWNhZG9zL1BvbGl0aWNhcyBkZSBDZXJ0aWZpY2Fk
+byBQZXJzb25hIE5hdHVyYWwucGRmMIICogYDVR0fBIICmTCCApUwgeWgQaA/hj1odHRwOi8vb2Nz
+cGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpiY2EvcHVibGljd2ViL3N0YXR1cy9vY3NwooGfpIGc
+MIGZMTkwNwYDVQQDDDBBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VSSVRZ
+IERBVEExMDAuBgNVBAsMJ0VOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjEd
+MBsGA1UECgwUU0VDVVJJVFkgREFUQSBTLkEuIDIxCzAJBgNVBAYTAkVDMIHHoIHEoIHBhoG+bGRh
+cDovL2xkYXBzZGNhMi5zZWN1cml0eWRhdGEubmV0LmVjL0NOPUFVVE9SSURBRCBERSBDRVJUSUZJ
+Q0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFUQSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04g
+REUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBEQVRBIFMuQS4gMixDPUVDP2NlcnRpZmljYXRlUmV2
+b2NhdGlvbkxpc3Q/YmFzZTCB4KCB3aCB2oaB12h0dHBzOi8vcG9ydGFsLW9wZXJhZG9yMi5zZWN1
+cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi93ZWJkaXN0L2NlcnRkaXN0P2NtZD1jcmwm
+aXNzdWVyPUNOPUFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFU
+QSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBE
+QVRBIFMuQS4gMixDPUVDMB0GA1UdDgQWBBS9ZziqP0bEoOQHB3KWWmcyXrjDiDArBgNVHRAEJDAi
+gA8yMDIxMDYyOTE0MzEzMVqBDzIwMjIwNjI5MTQzMTMxWjALBgNVHQ8EBAMCBeAwGgYKKwYBBAGC
+pnIDAQQMDAoxMzA5NzQzNTk3MBcGCisGAQQBgqZyAwkECQwHUVVFVkVETzARBgorBgEEAYKmcgMi
+BAMMAS4wQgYKKwYBBAGCpnIDBwQ0DDJBVi4gSkFJTUUgUk9MRE9TIEFHVUlMRVJBIFNPTEFSIDEw
+IFkgREVDSU1BIE5PVkVOQTAeBgorBgEEAYKmcgMCBBAMDlJJQ0FSRE8gREFOSUVMMB8GCisGAQQB
+gqZyAyAEEQwPMDAxMDAyMDAwMTI4MTkzMBEGCisGAQQBgqZyAyMEAwwBLjATBgorBgEEAYKmcgMh
+BAUMA1BGWDAXBgorBgEEAYKmcgMMBAkMB0VDVUFET1IwFwYKKwYBBAGCpnIDAwQJDAdCVVJCQU5P
+MBEGCisGAQQBgqZyAx4EAwwBLjAdBgorBgEEAYKmcgMLBA8MDTEzMDk3NDM1OTcwMDEwEQYKKwYB
+BAGCpnIDHQQDDAEuMBYGCisGAQQBgqZyAwQECAwGRkVSUklOMBwGCisGAQQBgqZyAwgEDgwMNTkz
+OTg1ODA0NzYyMA0GCSqGSIb3DQEBCwUAA4ICAQCOXdGgB2uSv9PfCxVX2CU3tm2frKaeSU0p6YwV
+PXKAY54b+M0ds/te8EYdWp83X06E2I2MzI0IfLbuvNd/K4F6OlgRM3Rwp8Hr8izVFhsOjzqergY+
+7MbEYD00PA/a8uUvtF4nAUN2sRRx1qs1BNGVaqavgZ5gMIQAEen2h4JDzaR78fDZN3Z5uHS4+IQE
+Ejfp1zOmGsy/a9GylcJSbVgwljTw2AaD3cJ1wG2frLGI88EFhshxSAmnZPja2ORQ696srVLPBxqP
+2wB9eP8T5Im7no9pCX859arf/L+Hvwjlf9PlpuVeN7CToZ596Yfjhxxj2qoYbDSw0qIw3cXSWQHX
+qteg3daYIEu82B5YBNOFictAw7lDFRBsgBoaXdpos0yKJz4WVeyc31CRIfEz4V890+Ij4x+M9fei
+vpxi9QHgIzfrl7SGDhO/Ju+b8HRQMpW2iXqp8MM+zBLliieV/H6sksz4MaQZtnNtiD0VBJTfLvHd
+eDdYs2CyelHZZFCyxP9glLOsY4mSH9A8HtwpQmsethvjgwNOgjzKeyTsAIi7T/xo1TI/5XszNyYm
+PQg/nXWJ98r4Dol7TQOFoQQ6EbTBUsRpmDDtzXeJa18FIhBotmXyTc2kAAZAHowe93hq8t5gJX9D
+B/o0s8VY+Ja76xLZ0Np45KzqXYVIBaqARk8lRg==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+0LObbeeaZ9PU/ntebL7EEF3KERPkrqP/zF4tqzGvMPSdum8sMg/Pxw/vCXuv71sfQRzwXIBtpZmu
+ShPmxOwHTZZNTbG11eavrpxAvqQlsyaB2+yPXEIuCzAgaKOX1cUWNiSaZZxkrruyY16FpYiCEsM3
+lTuyXUNrn7ulyMRaOqSWnNw2WQBE7/SWGt+a4Iaq+kC+z3t2IQtImDl9Xps3MNrU8lDvZoCE7jFl
+JbXvFrTrpTv5XaaF4tyoQ7wfVupG9aNEfbsXuVCLDFmCZKdgvkVmSCVMk6toaO80yYlnLHvH/Jm8
+SDkUusf2OKW4FpsA0ONs4eaBbisQT2r/uUWmQQ==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID comprobante
+ 2021-11-19 15:55:17 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID comprobante
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID comprobante and Element was [factura: null]
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Transform", "null")
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>BURBANO FERRIN RICARDO DANIEL</razonSocial>
+        <nombreComercial>BURBANO FERRIN RICARDO DANIEL</nombreComercial>
+        <ruc>1309743597001</ruc>
+        <claveAcceso>1911202101130974359700110010010000000111234567819</claveAcceso>
+        <codDoc>01</codDoc>
+        <estab>001</estab>
+        <ptoEmi>001</ptoEmi>
+        <secuencial>000000011</secuencial>
+        <dirMatriz>ECU991</dirMatriz>
+        <regimenMicroempresas>CONTRIBUYENTE R??GIMEN MICROEMPRESAS</regimenMicroempresas>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision>19/11/2021</fechaEmision>
+        <dirEstablecimiento>ECU991</dirEstablecimiento>
+        <obligadoContabilidad>NO</obligadoContabilidad>
+        <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+        <razonSocialComprador>BUESTAN VILLARROEL JORGE OSWALDO</razonSocialComprador>
+        <identificacionComprador>0922489968</identificacionComprador>
+        <direccionComprador>florida norte</direccionComprador>
+        <totalSinImpuestos>20.00</totalSinImpuestos>
+        <totalDescuento>0.00</totalDescuento>
+        <totalConImpuestos>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <baseImponible>20.00</baseImponible>
+                <tarifa>0</tarifa>
+                <valor>0.00</valor>
+            </totalImpuesto>
+        </totalConImpuestos>
+        <propina>0.00</propina>
+        <importeTotal>20.00</importeTotal>
+        <moneda>DOLAR</moneda>
+        <pagos>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>20.00</total>
+            </pago>
+        </pagos>
+    </infoFactura>
+    <detalles>
+        <detalle>
+            <codigoPrincipal>001</codigoPrincipal>
+            <codigoAuxiliar>001</codigoAuxiliar>
+            <descripcion>PRUEBA</descripcion>
+            <cantidad>1</cantidad>
+            <precioUnitario>20</precioUnitario>
+            <descuento>0</descuento>
+            <precioTotalSinImpuesto>20.00</precioTotalSinImpuesto>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>0</tarifa>
+                    <baseImponible>20.00</baseImponible>
+                    <valor>0.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+    </detalles>
+    <infoAdicional>
+        <campoAdicional nombre="Direcci??n">florida norte</campoAdicional>
+        <campoAdicional nombre="Tel??fono">2259197</campoAdicional>
+        <campoAdicional nombre="Email">jorge.buestan.v@gmail.com</campoAdicional>
+    </infoAdicional>
+</factura>
+ 2021-11-19 15:55:17 DEBUG SignerOutputStream:68 - Canonicalized SignedInfo:
+ 2021-11-19 15:55:17 DEBUG SignerOutputStream:73 - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature-SignedInfo932545">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID694540" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature554554-SignedProperties246964">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>PL16KIuM7lXZhRMZb3eYlYylru4=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1908960">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>6ufpu3OvYzlbg6mnKJacanUkemQ=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-776053" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>AFj7RHLnCLeKUjMLO6gVlmeluH4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+ 2021-11-19 15:55:17 DEBUG FirmaXML:568 - Se realiza XADES-T  -> false
+ 2021-11-19 15:55:17 DEBUG FirmaXML:610 - Se realiza XADES-C ->false
+ 2021-11-19 15:55:17 DEBUG FirmaXML:650 - Se realiza XADES-X -> false
+ 2021-11-19 15:55:17 DEBUG FirmaXML:653 - Se realiza XADES-XL ->  false
+ 2021-11-19 15:55:17 DEBUG FirmaXML:568 - Se realiza XADES-T  -> false
+ 2021-11-19 15:55:17 DEBUG FirmaXML:610 - Se realiza XADES-C ->false
+ 2021-11-19 15:55:17 DEBUG FirmaXML:650 - Se realiza XADES-X -> false
+ 2021-11-19 15:55:17 DEBUG FirmaXML:653 - Se realiza XADES-XL ->  false
+ 2021-11-19 15:55:17 DEBUG ValidarFirmaXML:523 - Número de firmas en el documento:  1
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Signature", "./")
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:SignedInfo", "./")
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:SignatureMethod", "./")
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:KeyInfo", "./")
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Transforms", "./")
+ 2021-11-19 15:55:17 DEBUG XMLSignature:601 - SignatureMethodURI = http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:55:17 DEBUG SignatureAlgorithm:132 - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+ 2021-11-19 15:55:17 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:55:17 DEBUG SignatureBaseRSA:67 - Created SignatureRSA using SHA1withRSA
+ 2021-11-19 15:55:17 DEBUG XMLSignature:602 - jceSigAlgorithm    = SHA1withRSA
+ 2021-11-19 15:55:17 DEBUG XMLSignature:603 - jceSigProvider     = SunRsaSign
+ 2021-11-19 15:55:17 DEBUG XMLSignature:604 - PublicKey = Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26346135017474827686096568012433707991471420430662588646241526876643594505861214787679042585007593275838672392426388892092049821221644715039251312292711439184954619234825388355115558231231085064566390560003863803733547702164858613543210456210132287077162928933152025643633961442907618903571019314012731568283562459458868476071819190512572040542765038840804005203684719087953955025823167390123372458215505341119339488262820522822028998332024521662240508464576097157417299518828785262548740501365673406262463390610767655005637500993359976560016929506480853727277355793953302231281381959777277424041610115056187839194689
+  public exponent: 65537
+ 2021-11-19 15:55:17 DEBUG SignerOutputStream:68 - Canonicalized SignedInfo:
+ 2021-11-19 15:55:17 DEBUG SignerOutputStream:73 - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature-SignedInfo932545">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID694540" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature554554-SignedProperties246964">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>PL16KIuM7lXZhRMZb3eYlYylru4=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate1908960">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>6ufpu3OvYzlbg6mnKJacanUkemQ=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-776053" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>AFj7RHLnCLeKUjMLO6gVlmeluH4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+ 2021-11-19 15:55:17 DEBUG Manifest:281 - verify 3 References
+ 2021-11-19 15:55:17 DEBUG Manifest:282 - I am not requested to follow nested Manifests
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature554554-SignedProperties246964"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature554554-SignedProperties246964"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID Signature554554-SignedProperties246964
+ 2021-11-19 15:55:17 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Signature554554-SignedProperties246964
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID Signature554554-SignedProperties246964 and Element was [etsi:SignedProperties: null]
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <etsi:SignedProperties xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature554554-SignedProperties246964"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-11-19T15:55:17-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>cxpBzGaFyB+8Np+ZuSHUNAAyVOk=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2 SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A. 2,C=EC</ds:X509IssuerName><ds:X509SerialNumber>62477101</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-776053"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties>
+ 2021-11-19 15:55:17 INFO  Reference:826 - Verification successful for URI "#Signature554554-SignedProperties246964"
+ 2021-11-19 15:55:17 DEBUG Manifest:312 - The Reference has Type http://uri.etsi.org/01903#SignedProperties
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1908960"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate1908960"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID Certificate1908960
+ 2021-11-19 15:55:17 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Certificate1908960
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID Certificate1908960 and Element was [ds:KeyInfo: null]
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Certificate1908960">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIL5TCCCc2gAwIBAgIEA7lTLTANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
+BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
+T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
+QkNBLTIgU0VDVVJJVFkgREFUQTAeFw0yMTA2MjkxNDMxMzFaFw0yMjA2MjkxNDMxMzFaMIGdMSYw
+JAYDVQQDDB1SSUNBUkRPIERBTklFTCBCVVJCQU5PIEZFUlJJTjEVMBMGA1UEBRMMMjkwNjIxMDk0
+MTI1MTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xHTAb
+BgNVBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMQswCQYDVQQGEwJFQzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBANCzm23nmmfT1P57Xmy+xBBdyhET5K6j/8xeLasxrzD0nbpvLDIPz8cP
+7wl7r+9bH0Ec8FyAbaWZrkoT5sTsB02WTU2xtdXmr66cQL6kJbMmgdvsj1xCLgswIGijl9XFFjYk
+mmWcZK67smNehaWIghLDN5U7sl1Da5+7pcjEWjqklpzcNlkARO/0lhrfmuCGqvpAvs97diELSJg5
+fV6bNzDa1PJQ72aAhO4xZSW17xa066U7+V2mheLcqEO8H1bqRvWjRH27F7lQiwxZgmSnYL5FZkgl
+TJOraGjvNMmJZyx7x/yZvEg5FLrH9jiluBabANDjbOHmgW4rEE9q/7lFpkECAwEAAaOCBy0wggcp
+MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUjLrKEVd4JYAdawpLVb+NrmLdvY8wWQYIKwYBBQUH
+AQEETTBLMEkGCCsGAQUFBzABhj1odHRwOi8vb2NzcGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpi
+Y2EvcHVibGljd2ViL3N0YXR1cy9vY3NwMIHPBgNVHS4EgccwgcQwgcGggb6ggbuGgbhsZGFwOi8v
+bGRhcHNkY2EyLnNlY3VyaXR5ZGF0YS5uZXQuZWMvQ049QVVUT1JJREFEIERFIENFUlRJRklDQUNJ
+T04gU1VCQ0EtMiBTRUNVUklUWSBEQVRBLE9VPUVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJ
+TkZPUk1BQ0lPTixPPVNFQ1VSSVRZIERBVEEgUy5BLiAyLEM9RUM/ZGVsdGFSZXZvY2F0aW9uTGlz
+dD9iYXNlMCAGA1UdEQQZMBeBFXJkYnVyYmFub0Bob3RtYWlsLmNvbTCCAQYGA1UdIASB/jCB+zBa
+BgorBgEEAYKmcgIHMEwwSgYIKwYBBQUHAgIwPh48AEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAGQA
+ZQAgAFAAZQByAHMAbwBuAGEAIABOAGEAdAB1AHIAYQBsMIGcBgorBgEEAYKmcgIBMIGNMIGKBggr
+BgEFBQcCARZ+aHR0cHM6Ly93d3cuc2VjdXJpdHlkYXRhLm5ldC5lYy93cC1jb250ZW50L2Rvd25s
+b2Fkcy9Ob3JtYXRpdmFzL1BfZGVfQ2VydGlmaWNhZG9zL1BvbGl0aWNhcyBkZSBDZXJ0aWZpY2Fk
+byBQZXJzb25hIE5hdHVyYWwucGRmMIICogYDVR0fBIICmTCCApUwgeWgQaA/hj1odHRwOi8vb2Nz
+cGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpiY2EvcHVibGljd2ViL3N0YXR1cy9vY3NwooGfpIGc
+MIGZMTkwNwYDVQQDDDBBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VSSVRZ
+IERBVEExMDAuBgNVBAsMJ0VOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjEd
+MBsGA1UECgwUU0VDVVJJVFkgREFUQSBTLkEuIDIxCzAJBgNVBAYTAkVDMIHHoIHEoIHBhoG+bGRh
+cDovL2xkYXBzZGNhMi5zZWN1cml0eWRhdGEubmV0LmVjL0NOPUFVVE9SSURBRCBERSBDRVJUSUZJ
+Q0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFUQSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04g
+REUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBEQVRBIFMuQS4gMixDPUVDP2NlcnRpZmljYXRlUmV2
+b2NhdGlvbkxpc3Q/YmFzZTCB4KCB3aCB2oaB12h0dHBzOi8vcG9ydGFsLW9wZXJhZG9yMi5zZWN1
+cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi93ZWJkaXN0L2NlcnRkaXN0P2NtZD1jcmwm
+aXNzdWVyPUNOPUFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFU
+QSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBE
+QVRBIFMuQS4gMixDPUVDMB0GA1UdDgQWBBS9ZziqP0bEoOQHB3KWWmcyXrjDiDArBgNVHRAEJDAi
+gA8yMDIxMDYyOTE0MzEzMVqBDzIwMjIwNjI5MTQzMTMxWjALBgNVHQ8EBAMCBeAwGgYKKwYBBAGC
+pnIDAQQMDAoxMzA5NzQzNTk3MBcGCisGAQQBgqZyAwkECQwHUVVFVkVETzARBgorBgEEAYKmcgMi
+BAMMAS4wQgYKKwYBBAGCpnIDBwQ0DDJBVi4gSkFJTUUgUk9MRE9TIEFHVUlMRVJBIFNPTEFSIDEw
+IFkgREVDSU1BIE5PVkVOQTAeBgorBgEEAYKmcgMCBBAMDlJJQ0FSRE8gREFOSUVMMB8GCisGAQQB
+gqZyAyAEEQwPMDAxMDAyMDAwMTI4MTkzMBEGCisGAQQBgqZyAyMEAwwBLjATBgorBgEEAYKmcgMh
+BAUMA1BGWDAXBgorBgEEAYKmcgMMBAkMB0VDVUFET1IwFwYKKwYBBAGCpnIDAwQJDAdCVVJCQU5P
+MBEGCisGAQQBgqZyAx4EAwwBLjAdBgorBgEEAYKmcgMLBA8MDTEzMDk3NDM1OTcwMDEwEQYKKwYB
+BAGCpnIDHQQDDAEuMBYGCisGAQQBgqZyAwQECAwGRkVSUklOMBwGCisGAQQBgqZyAwgEDgwMNTkz
+OTg1ODA0NzYyMA0GCSqGSIb3DQEBCwUAA4ICAQCOXdGgB2uSv9PfCxVX2CU3tm2frKaeSU0p6YwV
+PXKAY54b+M0ds/te8EYdWp83X06E2I2MzI0IfLbuvNd/K4F6OlgRM3Rwp8Hr8izVFhsOjzqergY+
+7MbEYD00PA/a8uUvtF4nAUN2sRRx1qs1BNGVaqavgZ5gMIQAEen2h4JDzaR78fDZN3Z5uHS4+IQE
+Ejfp1zOmGsy/a9GylcJSbVgwljTw2AaD3cJ1wG2frLGI88EFhshxSAmnZPja2ORQ696srVLPBxqP
+2wB9eP8T5Im7no9pCX859arf/L+Hvwjlf9PlpuVeN7CToZ596Yfjhxxj2qoYbDSw0qIw3cXSWQHX
+qteg3daYIEu82B5YBNOFictAw7lDFRBsgBoaXdpos0yKJz4WVeyc31CRIfEz4V890+Ij4x+M9fei
+vpxi9QHgIzfrl7SGDhO/Ju+b8HRQMpW2iXqp8MM+zBLliieV/H6sksz4MaQZtnNtiD0VBJTfLvHd
+eDdYs2CyelHZZFCyxP9glLOsY4mSH9A8HtwpQmsethvjgwNOgjzKeyTsAIi7T/xo1TI/5XszNyYm
+PQg/nXWJ98r4Dol7TQOFoQQ6EbTBUsRpmDDtzXeJa18FIhBotmXyTc2kAAZAHowe93hq8t5gJX9D
+B/o0s8VY+Ja76xLZ0Np45KzqXYVIBaqARk8lRg==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+0LObbeeaZ9PU/ntebL7EEF3KERPkrqP/zF4tqzGvMPSdum8sMg/Pxw/vCXuv71sfQRzwXIBtpZmu
+ShPmxOwHTZZNTbG11eavrpxAvqQlsyaB2+yPXEIuCzAgaKOX1cUWNiSaZZxkrruyY16FpYiCEsM3
+lTuyXUNrn7ulyMRaOqSWnNw2WQBE7/SWGt+a4Iaq+kC+z3t2IQtImDl9Xps3MNrU8lDvZoCE7jFl
+JbXvFrTrpTv5XaaF4tyoQ7wfVupG9aNEfbsXuVCLDFmCZKdgvkVmSCVMk6toaO80yYlnLHvH/Jm8
+SDkUusf2OKW4FpsA0ONs4eaBbisQT2r/uUWmQQ==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+ 2021-11-19 15:55:17 INFO  Reference:826 - Verification successful for URI "#Certificate1908960"
+ 2021-11-19 15:55:17 DEBUG Manifest:312 - The Reference has Type 
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Transforms", "./")
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:17 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:17 DEBUG IdResolver:151 - getElementByIdType() Search for ID comprobante
+ 2021-11-19 15:55:17 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID comprobante
+ 2021-11-19 15:55:17 DEBUG ResolverFragment:95 - Try to catch an Element with ID comprobante and Element was [factura: null]
+ 2021-11-19 15:55:17 DEBUG ElementProxy:194 - setElement("ds:Transform", "./")
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:17 DEBUG DigesterOutputStream:64 - <factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>BURBANO FERRIN RICARDO DANIEL</razonSocial>
+        <nombreComercial>BURBANO FERRIN RICARDO DANIEL</nombreComercial>
+        <ruc>1309743597001</ruc>
+        <claveAcceso>1911202101130974359700110010010000000111234567819</claveAcceso>
+        <codDoc>01</codDoc>
+        <estab>001</estab>
+        <ptoEmi>001</ptoEmi>
+        <secuencial>000000011</secuencial>
+        <dirMatriz>ECU991</dirMatriz>
+        <regimenMicroempresas>CONTRIBUYENTE R??GIMEN MICROEMPRESAS</regimenMicroempresas>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision>19/11/2021</fechaEmision>
+        <dirEstablecimiento>ECU991</dirEstablecimiento>
+        <obligadoContabilidad>NO</obligadoContabilidad>
+        <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+        <razonSocialComprador>BUESTAN VILLARROEL JORGE OSWALDO</razonSocialComprador>
+        <identificacionComprador>0922489968</identificacionComprador>
+        <direccionComprador>florida norte</direccionComprador>
+        <totalSinImpuestos>20.00</totalSinImpuestos>
+        <totalDescuento>0.00</totalDescuento>
+        <totalConImpuestos>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <baseImponible>20.00</baseImponible>
+                <tarifa>0</tarifa>
+                <valor>0.00</valor>
+            </totalImpuesto>
+        </totalConImpuestos>
+        <propina>0.00</propina>
+        <importeTotal>20.00</importeTotal>
+        <moneda>DOLAR</moneda>
+        <pagos>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>20.00</total>
+            </pago>
+        </pagos>
+    </infoFactura>
+    <detalles>
+        <detalle>
+            <codigoPrincipal>001</codigoPrincipal>
+            <codigoAuxiliar>001</codigoAuxiliar>
+            <descripcion>PRUEBA</descripcion>
+            <cantidad>1</cantidad>
+            <precioUnitario>20</precioUnitario>
+            <descuento>0</descuento>
+            <precioTotalSinImpuesto>20.00</precioTotalSinImpuesto>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>0</tarifa>
+                    <baseImponible>20.00</baseImponible>
+                    <valor>0.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+    </detalles>
+    <infoAdicional>
+        <campoAdicional nombre="Direcci??n">florida norte</campoAdicional>
+        <campoAdicional nombre="Tel??fono">2259197</campoAdicional>
+        <campoAdicional nombre="Email">jorge.buestan.v@gmail.com</campoAdicional>
+    </infoAdicional>
+</factura>
+ 2021-11-19 15:55:17 INFO  Reference:826 - Verification successful for URI "#comprobante"
+ 2021-11-19 15:55:17 DEBUG Manifest:312 - The Reference has Type 
+ 2021-11-19 15:55:17 DEBUG ValidarFirmaXML:4606 - XAdES_BES
+ 2021-11-19 15:55:17 INFO  ValidarFirmaXML:998 - El documento es una firma XAdES-BES válida
+ 2021-11-19 15:55:17 INFO  ValidacionBasica:63 - La firma es valida = El documento es una firma XAdES-BES válida
+Firmado el: Fri Nov 19 15:55:17 COT 2021
+ 2021-11-19 15:55:39 DEBUG Main:39 - Prueba de Configuración de Firma ElectronicaLLLL
+ 2021-11-19 15:55:39 TRACE I18nFactory:131 - No hay fichero de configuración específico
+ 2021-11-19 15:55:39 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.c14n.implementations.Canonicalizer20010315OmitComments)
+ 2021-11-19 15:55:39 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315WithComments)
+ 2021-11-19 15:55:39 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclOmitComments)
+ 2021-11-19 15:55:39 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer20010315ExclWithComments)
+ 2021-11-19 15:55:39 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.c14n.implementations.Canonicalizer11_OmitComments)
+ 2021-11-19 15:55:39 DEBUG Init:193 - Canonicalizer.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.c14n.implementations.Canonicalizer11_WithComments)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/2000/09/xmldsig#base64, org.apache.xml.security.transforms.implementations.TransformBase64Decode)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315, org.apache.xml.security.transforms.implementations.TransformC14N)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NWithComments)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/2006/12/xml-c14n11, org.apache.xml.security.transforms.implementations.TransformC14N11)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/2006/12/xml-c14n11#WithComments, org.apache.xml.security.transforms.implementations.TransformC14N11_WithComments)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#, org.apache.xml.security.transforms.implementations.TransformC14NExclusive)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/2001/10/xml-exc-c14n#WithComments, org.apache.xml.security.transforms.implementations.TransformC14NExclusiveWithComments)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/1999/REC-xpath-19991116, org.apache.xml.security.transforms.implementations.TransformXPath)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/2000/09/xmldsig#enveloped-signature, org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/TR/1999/REC-xslt-19991116, org.apache.xml.security.transforms.implementations.TransformXSLT)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/2002/04/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+ 2021-11-19 15:55:39 DEBUG Init:221 - Transform.register(http://www.w3.org/2002/06/xmldsig-filter2, org.apache.xml.security.transforms.implementations.TransformXPath2Filter)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:374 - Init() called
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#dsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureDSA)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#dsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureDSA
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#rsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#rsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2000/09/xmldsig#hmac-sha1, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2000/09/xmldsig#hmac-sha1 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA1
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-md5, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-md5 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSAMD5
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSARIPEMD160
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha256, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha256 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA256
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha384, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha384 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA384
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#rsa-sha512, org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#rsa-sha512 org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA512
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1, org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1 org.apache.xml.security.algorithms.implementations.SignatureECDSA$SignatureECDSASHA1
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-md5, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-md5 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacMD5
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacRIPEMD160
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha256, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha256 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA256
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha384, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha384 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA384
+ 2021-11-19 15:55:39 DEBUG Init:275 - SignatureAlgorithm.register(http://www.w3.org/2001/04/xmldsig-more#hmac-sha512, org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:395 - Try to register http://www.w3.org/2001/04/xmldsig-more#hmac-sha512 org.apache.xml.security.algorithms.implementations.IntegrityHmac$IntegrityHmacSHA512
+ 2021-11-19 15:55:39 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP: A simple resolver for requests to HTTP space
+ 2021-11-19 15:55:39 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverBigLocalFilesystem: A simple resolver for requests to the local file system with big files
+ 2021-11-19 15:55:39 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverFragment: A simple resolver for requests of same-document URIs
+ 2021-11-19 15:55:39 DEBUG Init:308 - Register Resolver: org.apache.xml.security.utils.resolver.implementations.ResolverXPointer: A simple resolver for requests of XPointer fragents
+ 2021-11-19 15:55:39 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RSAKeyValueResolver: Can extract RSA public keys
+ 2021-11-19 15:55:39 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.DSAKeyValueResolver: Can extract DSA public keys
+ 2021-11-19 15:55:39 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509CertificateResolver: Can extract public keys from X509 certificates
+ 2021-11-19 15:55:39 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SKIResolver: Uses an X509v3 SubjectKeyIdentifier extension to retrieve a certificate from the storages
+ 2021-11-19 15:55:39 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.RetrievalMethodResolver: Resolves keys and certificates using ResourceResolvers
+ 2021-11-19 15:55:39 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509SubjectNameResolver: Uses an X509 SubjectName to retrieve a certificate from the storages
+ 2021-11-19 15:55:39 DEBUG Init:347 - Register Resolver: org.apache.xml.security.keys.keyresolver.implementations.X509IssuerSerialResolver: Uses an X509 IssuerName and IssuerSerial to retrieve a certificate from the storages
+ 2021-11-19 15:55:39 DEBUG Init:364 - Now I try to bind prefixes:
+ 2021-11-19 15:55:39 DEBUG Init:374 - Now I try to bind ds to http://www.w3.org/2000/09/xmldsig#
+ 2021-11-19 15:55:39 DEBUG Init:374 - Now I try to bind xenc to http://www.w3.org/2001/04/xmlenc#
+ 2021-11-19 15:55:39 DEBUG Init:374 - Now I try to bind experimental to http://www.xmlsecurity.org/experimental#
+ 2021-11-19 15:55:39 DEBUG Init:374 - Now I try to bind dsig-xpath-old to http://www.w3.org/2002/04/xmldsig-filter2
+ 2021-11-19 15:55:39 DEBUG Init:374 - Now I try to bind dsig-xpath to http://www.w3.org/2002/06/xmldsig-filter2
+ 2021-11-19 15:55:39 DEBUG Init:374 - Now I try to bind ec to http://www.w3.org/2001/10/xml-exc-c14n#
+ 2021-11-19 15:55:39 DEBUG Init:374 - Now I try to bind xx to http://www.nue.et-inf.uni-siegen.de/~geuer-pollmann/#xpathFilter
+ 2021-11-19 15:55:39 DEBUG Init:386 - XX_init                             70 ms
+ 2021-11-19 15:55:39 DEBUG Init:387 -   XX_prng                           0 ms
+ 2021-11-19 15:55:39 DEBUG Init:388 -   XX_parsing                        11 ms
+ 2021-11-19 15:55:39 DEBUG Init:389 -   XX_configure_i18n                 3 ms
+ 2021-11-19 15:55:39 DEBUG Init:390 -   XX_configure_reg_c14n             10 ms
+ 2021-11-19 15:55:39 DEBUG Init:391 -   XX_configure_reg_jcemapper        2 ms
+ 2021-11-19 15:55:39 DEBUG Init:392 -   XX_configure_reg_keyInfo          4 ms
+ 2021-11-19 15:55:39 DEBUG Init:393 -   XX_configure_reg_keyResolver      5 ms
+ 2021-11-19 15:55:39 DEBUG Init:394 -   XX_configure_reg_prefixes         1 ms
+ 2021-11-19 15:55:39 DEBUG Init:395 -   XX_configure_reg_resourceresolver 5 ms
+ 2021-11-19 15:55:39 DEBUG Init:396 -   XX_configure_reg_sigalgos         18 ms
+ 2021-11-19 15:55:39 DEBUG Init:397 -   XX_configure_reg_transforms       10 ms
+ 2021-11-19 15:55:39 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+ 2021-11-19 15:55:39 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#sha1
+ 2021-11-19 15:55:39 DEBUG Transform:102 - Create URI "http://www.w3.org/2000/09/xmldsig#enveloped-signature" class "class org.apache.xml.security.transforms.implementations.TransformEnvelopedSignature"
+ 2021-11-19 15:55:39 DEBUG Transform:104 - The NodeList is null
+ 2021-11-19 15:55:39 DEBUG Transforms:221 - Transforms.addTransform(http://www.w3.org/2000/09/xmldsig#enveloped-signature)
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:132 - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+ 2021-11-19 15:55:39 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:55:39 DEBUG SignatureBaseRSA:67 - Created SignatureRSA using SHA1withRSA
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverDirectHTTP
+ 2021-11-19 15:55:39 DEBUG ResolverDirectHTTP:260 - quick fail for empty URIs and local ones
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverBigLocalFilesystem
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature298779-SignedProperties554707"
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature298779-SignedProperties554707"
+ 2021-11-19 15:55:39 DEBUG IdResolver:151 - getElementByIdType() Search for ID Signature298779-SignedProperties554707
+ 2021-11-19 15:55:39 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Signature298779-SignedProperties554707
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:95 - Try to catch an Element with ID Signature298779-SignedProperties554707 and Element was [etsi:SignedProperties: null]
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:64 - <etsi:SignedProperties xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature298779-SignedProperties554707"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-11-19T15:55:39-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>cxpBzGaFyB+8Np+ZuSHUNAAyVOk=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2 SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A. 2,C=EC</ds:X509IssuerName><ds:X509SerialNumber>62477101</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-449254"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties>
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate117665"
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate117665"
+ 2021-11-19 15:55:39 DEBUG IdResolver:151 - getElementByIdType() Search for ID Certificate117665
+ 2021-11-19 15:55:39 DEBUG IdResolver:99 - I could find an Element using the simple getElementByIdType method: ds:KeyInfo
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:95 - Try to catch an Element with ID Certificate117665 and Element was [ds:KeyInfo: null]
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:64 - <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Certificate117665">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIL5TCCCc2gAwIBAgIEA7lTLTANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
+BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
+T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
+QkNBLTIgU0VDVVJJVFkgREFUQTAeFw0yMTA2MjkxNDMxMzFaFw0yMjA2MjkxNDMxMzFaMIGdMSYw
+JAYDVQQDDB1SSUNBUkRPIERBTklFTCBCVVJCQU5PIEZFUlJJTjEVMBMGA1UEBRMMMjkwNjIxMDk0
+MTI1MTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xHTAb
+BgNVBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMQswCQYDVQQGEwJFQzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBANCzm23nmmfT1P57Xmy+xBBdyhET5K6j/8xeLasxrzD0nbpvLDIPz8cP
+7wl7r+9bH0Ec8FyAbaWZrkoT5sTsB02WTU2xtdXmr66cQL6kJbMmgdvsj1xCLgswIGijl9XFFjYk
+mmWcZK67smNehaWIghLDN5U7sl1Da5+7pcjEWjqklpzcNlkARO/0lhrfmuCGqvpAvs97diELSJg5
+fV6bNzDa1PJQ72aAhO4xZSW17xa066U7+V2mheLcqEO8H1bqRvWjRH27F7lQiwxZgmSnYL5FZkgl
+TJOraGjvNMmJZyx7x/yZvEg5FLrH9jiluBabANDjbOHmgW4rEE9q/7lFpkECAwEAAaOCBy0wggcp
+MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUjLrKEVd4JYAdawpLVb+NrmLdvY8wWQYIKwYBBQUH
+AQEETTBLMEkGCCsGAQUFBzABhj1odHRwOi8vb2NzcGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpi
+Y2EvcHVibGljd2ViL3N0YXR1cy9vY3NwMIHPBgNVHS4EgccwgcQwgcGggb6ggbuGgbhsZGFwOi8v
+bGRhcHNkY2EyLnNlY3VyaXR5ZGF0YS5uZXQuZWMvQ049QVVUT1JJREFEIERFIENFUlRJRklDQUNJ
+T04gU1VCQ0EtMiBTRUNVUklUWSBEQVRBLE9VPUVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJ
+TkZPUk1BQ0lPTixPPVNFQ1VSSVRZIERBVEEgUy5BLiAyLEM9RUM/ZGVsdGFSZXZvY2F0aW9uTGlz
+dD9iYXNlMCAGA1UdEQQZMBeBFXJkYnVyYmFub0Bob3RtYWlsLmNvbTCCAQYGA1UdIASB/jCB+zBa
+BgorBgEEAYKmcgIHMEwwSgYIKwYBBQUHAgIwPh48AEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAGQA
+ZQAgAFAAZQByAHMAbwBuAGEAIABOAGEAdAB1AHIAYQBsMIGcBgorBgEEAYKmcgIBMIGNMIGKBggr
+BgEFBQcCARZ+aHR0cHM6Ly93d3cuc2VjdXJpdHlkYXRhLm5ldC5lYy93cC1jb250ZW50L2Rvd25s
+b2Fkcy9Ob3JtYXRpdmFzL1BfZGVfQ2VydGlmaWNhZG9zL1BvbGl0aWNhcyBkZSBDZXJ0aWZpY2Fk
+byBQZXJzb25hIE5hdHVyYWwucGRmMIICogYDVR0fBIICmTCCApUwgeWgQaA/hj1odHRwOi8vb2Nz
+cGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpiY2EvcHVibGljd2ViL3N0YXR1cy9vY3NwooGfpIGc
+MIGZMTkwNwYDVQQDDDBBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VSSVRZ
+IERBVEExMDAuBgNVBAsMJ0VOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjEd
+MBsGA1UECgwUU0VDVVJJVFkgREFUQSBTLkEuIDIxCzAJBgNVBAYTAkVDMIHHoIHEoIHBhoG+bGRh
+cDovL2xkYXBzZGNhMi5zZWN1cml0eWRhdGEubmV0LmVjL0NOPUFVVE9SSURBRCBERSBDRVJUSUZJ
+Q0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFUQSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04g
+REUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBEQVRBIFMuQS4gMixDPUVDP2NlcnRpZmljYXRlUmV2
+b2NhdGlvbkxpc3Q/YmFzZTCB4KCB3aCB2oaB12h0dHBzOi8vcG9ydGFsLW9wZXJhZG9yMi5zZWN1
+cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi93ZWJkaXN0L2NlcnRkaXN0P2NtZD1jcmwm
+aXNzdWVyPUNOPUFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFU
+QSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBE
+QVRBIFMuQS4gMixDPUVDMB0GA1UdDgQWBBS9ZziqP0bEoOQHB3KWWmcyXrjDiDArBgNVHRAEJDAi
+gA8yMDIxMDYyOTE0MzEzMVqBDzIwMjIwNjI5MTQzMTMxWjALBgNVHQ8EBAMCBeAwGgYKKwYBBAGC
+pnIDAQQMDAoxMzA5NzQzNTk3MBcGCisGAQQBgqZyAwkECQwHUVVFVkVETzARBgorBgEEAYKmcgMi
+BAMMAS4wQgYKKwYBBAGCpnIDBwQ0DDJBVi4gSkFJTUUgUk9MRE9TIEFHVUlMRVJBIFNPTEFSIDEw
+IFkgREVDSU1BIE5PVkVOQTAeBgorBgEEAYKmcgMCBBAMDlJJQ0FSRE8gREFOSUVMMB8GCisGAQQB
+gqZyAyAEEQwPMDAxMDAyMDAwMTI4MTkzMBEGCisGAQQBgqZyAyMEAwwBLjATBgorBgEEAYKmcgMh
+BAUMA1BGWDAXBgorBgEEAYKmcgMMBAkMB0VDVUFET1IwFwYKKwYBBAGCpnIDAwQJDAdCVVJCQU5P
+MBEGCisGAQQBgqZyAx4EAwwBLjAdBgorBgEEAYKmcgMLBA8MDTEzMDk3NDM1OTcwMDEwEQYKKwYB
+BAGCpnIDHQQDDAEuMBYGCisGAQQBgqZyAwQECAwGRkVSUklOMBwGCisGAQQBgqZyAwgEDgwMNTkz
+OTg1ODA0NzYyMA0GCSqGSIb3DQEBCwUAA4ICAQCOXdGgB2uSv9PfCxVX2CU3tm2frKaeSU0p6YwV
+PXKAY54b+M0ds/te8EYdWp83X06E2I2MzI0IfLbuvNd/K4F6OlgRM3Rwp8Hr8izVFhsOjzqergY+
+7MbEYD00PA/a8uUvtF4nAUN2sRRx1qs1BNGVaqavgZ5gMIQAEen2h4JDzaR78fDZN3Z5uHS4+IQE
+Ejfp1zOmGsy/a9GylcJSbVgwljTw2AaD3cJ1wG2frLGI88EFhshxSAmnZPja2ORQ696srVLPBxqP
+2wB9eP8T5Im7no9pCX859arf/L+Hvwjlf9PlpuVeN7CToZ596Yfjhxxj2qoYbDSw0qIw3cXSWQHX
+qteg3daYIEu82B5YBNOFictAw7lDFRBsgBoaXdpos0yKJz4WVeyc31CRIfEz4V890+Ij4x+M9fei
+vpxi9QHgIzfrl7SGDhO/Ju+b8HRQMpW2iXqp8MM+zBLliieV/H6sksz4MaQZtnNtiD0VBJTfLvHd
+eDdYs2CyelHZZFCyxP9glLOsY4mSH9A8HtwpQmsethvjgwNOgjzKeyTsAIi7T/xo1TI/5XszNyYm
+PQg/nXWJ98r4Dol7TQOFoQQ6EbTBUsRpmDDtzXeJa18FIhBotmXyTc2kAAZAHowe93hq8t5gJX9D
+B/o0s8VY+Ja76xLZ0Np45KzqXYVIBaqARk8lRg==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+0LObbeeaZ9PU/ntebL7EEF3KERPkrqP/zF4tqzGvMPSdum8sMg/Pxw/vCXuv71sfQRzwXIBtpZmu
+ShPmxOwHTZZNTbG11eavrpxAvqQlsyaB2+yPXEIuCzAgaKOX1cUWNiSaZZxkrruyY16FpYiCEsM3
+lTuyXUNrn7ulyMRaOqSWnNw2WQBE7/SWGt+a4Iaq+kC+z3t2IQtImDl9Xps3MNrU8lDvZoCE7jFl
+JbXvFrTrpTv5XaaF4tyoQ7wfVupG9aNEfbsXuVCLDFmCZKdgvkVmSCVMk6toaO80yYlnLHvH/Jm8
+SDkUusf2OKW4FpsA0ONs4eaBbisQT2r/uUWmQQ==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:39 DEBUG IdResolver:151 - getElementByIdType() Search for ID comprobante
+ 2021-11-19 15:55:39 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID comprobante
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:95 - Try to catch an Element with ID comprobante and Element was [factura: null]
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Transform", "null")
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:64 - <factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>BURBANO FERRIN RICARDO DANIEL</razonSocial>
+        <nombreComercial>BURBANO FERRIN RICARDO DANIEL</nombreComercial>
+        <ruc>1309743597001</ruc>
+        <claveAcceso>1911202101130974359700110010010000000111234567819</claveAcceso>
+        <codDoc>01</codDoc>
+        <estab>001</estab>
+        <ptoEmi>001</ptoEmi>
+        <secuencial>000000011</secuencial>
+        <dirMatriz>ECU991</dirMatriz>
+        <regimenMicroempresas>CONTRIBUYENTE R??GIMEN MICROEMPRESAS</regimenMicroempresas>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision>19/11/2021</fechaEmision>
+        <dirEstablecimiento>ECU991</dirEstablecimiento>
+        <obligadoContabilidad>NO</obligadoContabilidad>
+        <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+        <razonSocialComprador>BUESTAN VILLARROEL JORGE OSWALDO</razonSocialComprador>
+        <identificacionComprador>0922489968</identificacionComprador>
+        <direccionComprador>florida norte</direccionComprador>
+        <totalSinImpuestos>20.00</totalSinImpuestos>
+        <totalDescuento>0.00</totalDescuento>
+        <totalConImpuestos>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <baseImponible>20.00</baseImponible>
+                <tarifa>0</tarifa>
+                <valor>0.00</valor>
+            </totalImpuesto>
+        </totalConImpuestos>
+        <propina>0.00</propina>
+        <importeTotal>20.00</importeTotal>
+        <moneda>DOLAR</moneda>
+        <pagos>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>20.00</total>
+            </pago>
+        </pagos>
+    </infoFactura>
+    <detalles>
+        <detalle>
+            <codigoPrincipal>001</codigoPrincipal>
+            <codigoAuxiliar>001</codigoAuxiliar>
+            <descripcion>PRUEBA</descripcion>
+            <cantidad>1</cantidad>
+            <precioUnitario>20</precioUnitario>
+            <descuento>0</descuento>
+            <precioTotalSinImpuesto>20.00</precioTotalSinImpuesto>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>0</tarifa>
+                    <baseImponible>20.00</baseImponible>
+                    <valor>0.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+    </detalles>
+    <infoAdicional>
+        <campoAdicional nombre="Direcci??n">florida norte</campoAdicional>
+        <campoAdicional nombre="Tel??fono">2259197</campoAdicional>
+        <campoAdicional nombre="Email">jorge.buestan.v@gmail.com</campoAdicional>
+    </infoAdicional>
+</factura>
+ 2021-11-19 15:55:39 DEBUG SignerOutputStream:68 - Canonicalized SignedInfo:
+ 2021-11-19 15:55:39 DEBUG SignerOutputStream:73 - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature-SignedInfo703298">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID693864" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature298779-SignedProperties554707">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>2bcDUM8+j3GYAhKu/aOUzQeBQtk=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate117665">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>vBakTbOv+a50OsZDKb9KUH4GPfw=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-449254" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>AFj7RHLnCLeKUjMLO6gVlmeluH4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+ 2021-11-19 15:55:39 DEBUG FirmaXML:568 - Se realiza XADES-T  -> false
+ 2021-11-19 15:55:39 DEBUG FirmaXML:610 - Se realiza XADES-C ->false
+ 2021-11-19 15:55:39 DEBUG FirmaXML:650 - Se realiza XADES-X -> false
+ 2021-11-19 15:55:39 DEBUG FirmaXML:653 - Se realiza XADES-XL ->  false
+ 2021-11-19 15:55:39 DEBUG ValidarFirmaXML:523 - Número de firmas en el documento:  1
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Signature", "./")
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:SignedInfo", "./")
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:SignatureMethod", "./")
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:KeyInfo", "./")
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Transforms", "./")
+ 2021-11-19 15:55:39 DEBUG XMLSignature:601 - SignatureMethodURI = http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:55:39 DEBUG SignatureAlgorithm:132 - Create URI "http://www.w3.org/2000/09/xmldsig#rsa-sha1" class "class org.apache.xml.security.algorithms.implementations.SignatureBaseRSA$SignatureRSASHA1"
+ 2021-11-19 15:55:39 DEBUG JCEMapper:100 - Request for URI http://www.w3.org/2000/09/xmldsig#rsa-sha1
+ 2021-11-19 15:55:39 DEBUG SignatureBaseRSA:67 - Created SignatureRSA using SHA1withRSA
+ 2021-11-19 15:55:39 DEBUG XMLSignature:602 - jceSigAlgorithm    = SHA1withRSA
+ 2021-11-19 15:55:39 DEBUG XMLSignature:603 - jceSigProvider     = SunRsaSign
+ 2021-11-19 15:55:39 DEBUG XMLSignature:604 - PublicKey = Sun RSA public key, 2048 bits
+  params: null
+  modulus: 26346135017474827686096568012433707991471420430662588646241526876643594505861214787679042585007593275838672392426388892092049821221644715039251312292711439184954619234825388355115558231231085064566390560003863803733547702164858613543210456210132287077162928933152025643633961442907618903571019314012731568283562459458868476071819190512572040542765038840804005203684719087953955025823167390123372458215505341119339488262820522822028998332024521662240508464576097157417299518828785262548740501365673406262463390610767655005637500993359976560016929506480853727277355793953302231281381959777277424041610115056187839194689
+  public exponent: 65537
+ 2021-11-19 15:55:39 DEBUG SignerOutputStream:68 - Canonicalized SignedInfo:
+ 2021-11-19 15:55:39 DEBUG SignerOutputStream:73 - <ds:SignedInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature-SignedInfo703298">
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+<ds:Reference Id="SignedPropertiesID693864" Type="http://uri.etsi.org/01903#SignedProperties" URI="#Signature298779-SignedProperties554707">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>2bcDUM8+j3GYAhKu/aOUzQeBQtk=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference URI="#Certificate117665">
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>vBakTbOv+a50OsZDKb9KUH4GPfw=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="Reference-ID-449254" URI="#comprobante">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+<ds:DigestValue>AFj7RHLnCLeKUjMLO6gVlmeluH4=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+ 2021-11-19 15:55:39 DEBUG Manifest:281 - verify 3 References
+ 2021-11-19 15:55:39 DEBUG Manifest:282 - I am not requested to follow nested Manifests
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature298779-SignedProperties554707"
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#Signature298779-SignedProperties554707"
+ 2021-11-19 15:55:39 DEBUG IdResolver:151 - getElementByIdType() Search for ID Signature298779-SignedProperties554707
+ 2021-11-19 15:55:39 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Signature298779-SignedProperties554707
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:95 - Try to catch an Element with ID Signature298779-SignedProperties554707 and Element was [etsi:SignedProperties: null]
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:64 - <etsi:SignedProperties xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Signature298779-SignedProperties554707"><etsi:SignedSignatureProperties><etsi:SigningTime>2021-11-19T15:55:39-05:00</etsi:SigningTime><etsi:SigningCertificate><etsi:Cert><etsi:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>cxpBzGaFyB+8Np+ZuSHUNAAyVOk=</ds:DigestValue></etsi:CertDigest><etsi:IssuerSerial><ds:X509IssuerName>CN=AUTORIDAD DE CERTIFICACION SUBCA-2 SECURITY DATA,OU=ENTIDAD DE CERTIFICACION DE INFORMACION,O=SECURITY DATA S.A. 2,C=EC</ds:X509IssuerName><ds:X509SerialNumber>62477101</ds:X509SerialNumber></etsi:IssuerSerial></etsi:Cert></etsi:SigningCertificate></etsi:SignedSignatureProperties><etsi:SignedDataObjectProperties><etsi:DataObjectFormat ObjectReference="#Reference-ID-449254"><etsi:Description>contenido comprobante</etsi:Description><etsi:MimeType>text/xml</etsi:MimeType></etsi:DataObjectFormat></etsi:SignedDataObjectProperties></etsi:SignedProperties>
+ 2021-11-19 15:55:39 INFO  Reference:826 - Verification successful for URI "#Signature298779-SignedProperties554707"
+ 2021-11-19 15:55:39 DEBUG Manifest:312 - The Reference has Type http://uri.etsi.org/01903#SignedProperties
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate117665"
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#Certificate117665"
+ 2021-11-19 15:55:39 DEBUG IdResolver:151 - getElementByIdType() Search for ID Certificate117665
+ 2021-11-19 15:55:39 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID Certificate117665
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:95 - Try to catch an Element with ID Certificate117665 and Element was [ds:KeyInfo: null]
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:64 - <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:etsi="http://uri.etsi.org/01903/v1.3.2#" Id="Certificate117665">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIL5TCCCc2gAwIBAgIEA7lTLTANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEBhMCRUMxHTAbBgNV
+BAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJ
+T04gREUgSU5GT1JNQUNJT04xOTA3BgNVBAMMMEFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNV
+QkNBLTIgU0VDVVJJVFkgREFUQTAeFw0yMTA2MjkxNDMxMzFaFw0yMjA2MjkxNDMxMzFaMIGdMSYw
+JAYDVQQDDB1SSUNBUkRPIERBTklFTCBCVVJCQU5PIEZFUlJJTjEVMBMGA1UEBRMMMjkwNjIxMDk0
+MTI1MTAwLgYDVQQLDCdFTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04xHTAb
+BgNVBAoMFFNFQ1VSSVRZIERBVEEgUy5BLiAyMQswCQYDVQQGEwJFQzCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBANCzm23nmmfT1P57Xmy+xBBdyhET5K6j/8xeLasxrzD0nbpvLDIPz8cP
+7wl7r+9bH0Ec8FyAbaWZrkoT5sTsB02WTU2xtdXmr66cQL6kJbMmgdvsj1xCLgswIGijl9XFFjYk
+mmWcZK67smNehaWIghLDN5U7sl1Da5+7pcjEWjqklpzcNlkARO/0lhrfmuCGqvpAvs97diELSJg5
+fV6bNzDa1PJQ72aAhO4xZSW17xa066U7+V2mheLcqEO8H1bqRvWjRH27F7lQiwxZgmSnYL5FZkgl
+TJOraGjvNMmJZyx7x/yZvEg5FLrH9jiluBabANDjbOHmgW4rEE9q/7lFpkECAwEAAaOCBy0wggcp
+MAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUjLrKEVd4JYAdawpLVb+NrmLdvY8wWQYIKwYBBQUH
+AQEETTBLMEkGCCsGAQUFBzABhj1odHRwOi8vb2NzcGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpi
+Y2EvcHVibGljd2ViL3N0YXR1cy9vY3NwMIHPBgNVHS4EgccwgcQwgcGggb6ggbuGgbhsZGFwOi8v
+bGRhcHNkY2EyLnNlY3VyaXR5ZGF0YS5uZXQuZWMvQ049QVVUT1JJREFEIERFIENFUlRJRklDQUNJ
+T04gU1VCQ0EtMiBTRUNVUklUWSBEQVRBLE9VPUVOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJ
+TkZPUk1BQ0lPTixPPVNFQ1VSSVRZIERBVEEgUy5BLiAyLEM9RUM/ZGVsdGFSZXZvY2F0aW9uTGlz
+dD9iYXNlMCAGA1UdEQQZMBeBFXJkYnVyYmFub0Bob3RtYWlsLmNvbTCCAQYGA1UdIASB/jCB+zBa
+BgorBgEEAYKmcgIHMEwwSgYIKwYBBQUHAgIwPh48AEMAZQByAHQAaQBmAGkAYwBhAGQAbwAgAGQA
+ZQAgAFAAZQByAHMAbwBuAGEAIABOAGEAdAB1AHIAYQBsMIGcBgorBgEEAYKmcgIBMIGNMIGKBggr
+BgEFBQcCARZ+aHR0cHM6Ly93d3cuc2VjdXJpdHlkYXRhLm5ldC5lYy93cC1jb250ZW50L2Rvd25s
+b2Fkcy9Ob3JtYXRpdmFzL1BfZGVfQ2VydGlmaWNhZG9zL1BvbGl0aWNhcyBkZSBDZXJ0aWZpY2Fk
+byBQZXJzb25hIE5hdHVyYWwucGRmMIICogYDVR0fBIICmTCCApUwgeWgQaA/hj1odHRwOi8vb2Nz
+cGd3LnNlY3VyaXR5ZGF0YS5uZXQuZWMvZWpiY2EvcHVibGljd2ViL3N0YXR1cy9vY3NwooGfpIGc
+MIGZMTkwNwYDVQQDDDBBVVRPUklEQUQgREUgQ0VSVElGSUNBQ0lPTiBTVUJDQS0yIFNFQ1VSSVRZ
+IERBVEExMDAuBgNVBAsMJ0VOVElEQUQgREUgQ0VSVElGSUNBQ0lPTiBERSBJTkZPUk1BQ0lPTjEd
+MBsGA1UECgwUU0VDVVJJVFkgREFUQSBTLkEuIDIxCzAJBgNVBAYTAkVDMIHHoIHEoIHBhoG+bGRh
+cDovL2xkYXBzZGNhMi5zZWN1cml0eWRhdGEubmV0LmVjL0NOPUFVVE9SSURBRCBERSBDRVJUSUZJ
+Q0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFUQSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04g
+REUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBEQVRBIFMuQS4gMixDPUVDP2NlcnRpZmljYXRlUmV2
+b2NhdGlvbkxpc3Q/YmFzZTCB4KCB3aCB2oaB12h0dHBzOi8vcG9ydGFsLW9wZXJhZG9yMi5zZWN1
+cml0eWRhdGEubmV0LmVjL2VqYmNhL3B1YmxpY3dlYi93ZWJkaXN0L2NlcnRkaXN0P2NtZD1jcmwm
+aXNzdWVyPUNOPUFVVE9SSURBRCBERSBDRVJUSUZJQ0FDSU9OIFNVQkNBLTIgU0VDVVJJVFkgREFU
+QSxPVT1FTlRJREFEIERFIENFUlRJRklDQUNJT04gREUgSU5GT1JNQUNJT04sTz1TRUNVUklUWSBE
+QVRBIFMuQS4gMixDPUVDMB0GA1UdDgQWBBS9ZziqP0bEoOQHB3KWWmcyXrjDiDArBgNVHRAEJDAi
+gA8yMDIxMDYyOTE0MzEzMVqBDzIwMjIwNjI5MTQzMTMxWjALBgNVHQ8EBAMCBeAwGgYKKwYBBAGC
+pnIDAQQMDAoxMzA5NzQzNTk3MBcGCisGAQQBgqZyAwkECQwHUVVFVkVETzARBgorBgEEAYKmcgMi
+BAMMAS4wQgYKKwYBBAGCpnIDBwQ0DDJBVi4gSkFJTUUgUk9MRE9TIEFHVUlMRVJBIFNPTEFSIDEw
+IFkgREVDSU1BIE5PVkVOQTAeBgorBgEEAYKmcgMCBBAMDlJJQ0FSRE8gREFOSUVMMB8GCisGAQQB
+gqZyAyAEEQwPMDAxMDAyMDAwMTI4MTkzMBEGCisGAQQBgqZyAyMEAwwBLjATBgorBgEEAYKmcgMh
+BAUMA1BGWDAXBgorBgEEAYKmcgMMBAkMB0VDVUFET1IwFwYKKwYBBAGCpnIDAwQJDAdCVVJCQU5P
+MBEGCisGAQQBgqZyAx4EAwwBLjAdBgorBgEEAYKmcgMLBA8MDTEzMDk3NDM1OTcwMDEwEQYKKwYB
+BAGCpnIDHQQDDAEuMBYGCisGAQQBgqZyAwQECAwGRkVSUklOMBwGCisGAQQBgqZyAwgEDgwMNTkz
+OTg1ODA0NzYyMA0GCSqGSIb3DQEBCwUAA4ICAQCOXdGgB2uSv9PfCxVX2CU3tm2frKaeSU0p6YwV
+PXKAY54b+M0ds/te8EYdWp83X06E2I2MzI0IfLbuvNd/K4F6OlgRM3Rwp8Hr8izVFhsOjzqergY+
+7MbEYD00PA/a8uUvtF4nAUN2sRRx1qs1BNGVaqavgZ5gMIQAEen2h4JDzaR78fDZN3Z5uHS4+IQE
+Ejfp1zOmGsy/a9GylcJSbVgwljTw2AaD3cJ1wG2frLGI88EFhshxSAmnZPja2ORQ696srVLPBxqP
+2wB9eP8T5Im7no9pCX859arf/L+Hvwjlf9PlpuVeN7CToZ596Yfjhxxj2qoYbDSw0qIw3cXSWQHX
+qteg3daYIEu82B5YBNOFictAw7lDFRBsgBoaXdpos0yKJz4WVeyc31CRIfEz4V890+Ij4x+M9fei
+vpxi9QHgIzfrl7SGDhO/Ju+b8HRQMpW2iXqp8MM+zBLliieV/H6sksz4MaQZtnNtiD0VBJTfLvHd
+eDdYs2CyelHZZFCyxP9glLOsY4mSH9A8HtwpQmsethvjgwNOgjzKeyTsAIi7T/xo1TI/5XszNyYm
+PQg/nXWJ98r4Dol7TQOFoQQ6EbTBUsRpmDDtzXeJa18FIhBotmXyTc2kAAZAHowe93hq8t5gJX9D
+B/o0s8VY+Ja76xLZ0Np45KzqXYVIBaqARk8lRg==
+</ds:X509Certificate>
+</ds:X509Data>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+0LObbeeaZ9PU/ntebL7EEF3KERPkrqP/zF4tqzGvMPSdum8sMg/Pxw/vCXuv71sfQRzwXIBtpZmu
+ShPmxOwHTZZNTbG11eavrpxAvqQlsyaB2+yPXEIuCzAgaKOX1cUWNiSaZZxkrruyY16FpYiCEsM3
+lTuyXUNrn7ulyMRaOqSWnNw2WQBE7/SWGt+a4Iaq+kC+z3t2IQtImDl9Xps3MNrU8lDvZoCE7jFl
+JbXvFrTrpTv5XaaF4tyoQ7wfVupG9aNEfbsXuVCLDFmCZKdgvkVmSCVMk6toaO80yYlnLHvH/Jm8
+SDkUusf2OKW4FpsA0ONs4eaBbisQT2r/uUWmQQ==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+</ds:KeyInfo>
+ 2021-11-19 15:55:39 INFO  Reference:826 - Verification successful for URI "#Certificate117665"
+ 2021-11-19 15:55:39 DEBUG Manifest:312 - The Reference has Type 
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Reference", "./")
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Transforms", "./")
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:157 - I was asked to create a ResourceResolver and got 0
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:158 -  extra resolvers to my existing 4 system-wide resolvers
+ 2021-11-19 15:55:39 DEBUG ResourceResolver:117 - check resolvability by class org.apache.xml.security.utils.resolver.implementations.ResolverFragment
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:131 - State I can resolve reference: "#comprobante"
+ 2021-11-19 15:55:39 DEBUG IdResolver:151 - getElementByIdType() Search for ID comprobante
+ 2021-11-19 15:55:39 DEBUG IdResolver:138 - getElementByIdUsingDOM() Search for ID comprobante
+ 2021-11-19 15:55:39 DEBUG ResolverFragment:95 - Try to catch an Element with ID comprobante and Element was [factura: null]
+ 2021-11-19 15:55:39 DEBUG ElementProxy:194 - setElement("ds:Transform", "./")
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:59 - Pre-digested input:
+ 2021-11-19 15:55:39 DEBUG DigesterOutputStream:64 - <factura id="comprobante" version="1.0.0">
+    <infoTributaria>
+        <ambiente>1</ambiente>
+        <tipoEmision>1</tipoEmision>
+        <razonSocial>BURBANO FERRIN RICARDO DANIEL</razonSocial>
+        <nombreComercial>BURBANO FERRIN RICARDO DANIEL</nombreComercial>
+        <ruc>1309743597001</ruc>
+        <claveAcceso>1911202101130974359700110010010000000111234567819</claveAcceso>
+        <codDoc>01</codDoc>
+        <estab>001</estab>
+        <ptoEmi>001</ptoEmi>
+        <secuencial>000000011</secuencial>
+        <dirMatriz>ECU991</dirMatriz>
+        <regimenMicroempresas>CONTRIBUYENTE R??GIMEN MICROEMPRESAS</regimenMicroempresas>
+    </infoTributaria>
+    <infoFactura>
+        <fechaEmision>19/11/2021</fechaEmision>
+        <dirEstablecimiento>ECU991</dirEstablecimiento>
+        <obligadoContabilidad>NO</obligadoContabilidad>
+        <tipoIdentificacionComprador>05</tipoIdentificacionComprador>
+        <razonSocialComprador>BUESTAN VILLARROEL JORGE OSWALDO</razonSocialComprador>
+        <identificacionComprador>0922489968</identificacionComprador>
+        <direccionComprador>florida norte</direccionComprador>
+        <totalSinImpuestos>20.00</totalSinImpuestos>
+        <totalDescuento>0.00</totalDescuento>
+        <totalConImpuestos>
+            <totalImpuesto>
+                <codigo>2</codigo>
+                <codigoPorcentaje>0</codigoPorcentaje>
+                <baseImponible>20.00</baseImponible>
+                <tarifa>0</tarifa>
+                <valor>0.00</valor>
+            </totalImpuesto>
+        </totalConImpuestos>
+        <propina>0.00</propina>
+        <importeTotal>20.00</importeTotal>
+        <moneda>DOLAR</moneda>
+        <pagos>
+            <pago>
+                <formaPago>01</formaPago>
+                <total>20.00</total>
+            </pago>
+        </pagos>
+    </infoFactura>
+    <detalles>
+        <detalle>
+            <codigoPrincipal>001</codigoPrincipal>
+            <codigoAuxiliar>001</codigoAuxiliar>
+            <descripcion>PRUEBA</descripcion>
+            <cantidad>1</cantidad>
+            <precioUnitario>20</precioUnitario>
+            <descuento>0</descuento>
+            <precioTotalSinImpuesto>20.00</precioTotalSinImpuesto>
+            <impuestos>
+                <impuesto>
+                    <codigo>2</codigo>
+                    <codigoPorcentaje>0</codigoPorcentaje>
+                    <tarifa>0</tarifa>
+                    <baseImponible>20.00</baseImponible>
+                    <valor>0.00</valor>
+                </impuesto>
+            </impuestos>
+        </detalle>
+    </detalles>
+    <infoAdicional>
+        <campoAdicional nombre="Direcci??n">florida norte</campoAdicional>
+        <campoAdicional nombre="Tel??fono">2259197</campoAdicional>
+        <campoAdicional nombre="Email">jorge.buestan.v@gmail.com</campoAdicional>
+    </infoAdicional>
+</factura>
+ 2021-11-19 15:55:39 INFO  Reference:826 - Verification successful for URI "#comprobante"
+ 2021-11-19 15:55:39 DEBUG Manifest:312 - The Reference has Type 
+ 2021-11-19 15:55:39 DEBUG ValidarFirmaXML:4606 - XAdES_BES
+ 2021-11-19 15:55:39 INFO  ValidarFirmaXML:998 - El documento es una firma XAdES-BES válida
+ 2021-11-19 15:55:39 INFO  ValidacionBasica:63 - La firma es valida = El documento es una firma XAdES-BES válida
+Firmado el: Fri Nov 19 15:55:39 COT 2021
+ 
